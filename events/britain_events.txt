@@ -4,7 +4,7 @@
 
 add_namespace = britain.labour
 
-# Japanese Stage Border Incident
+# A mak profuma l'alito di bacon
 country_event = {
 	id = britain.labour.1
 	title = "The Imperial Past"
