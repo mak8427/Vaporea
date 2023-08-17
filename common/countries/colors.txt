@@ -1,8 +1,8 @@
 #reload countrycolors
 BRT = {
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 255 73 121 }
-
+	color = rgb { 202 57 94 }
+	color_ui = rgb { 256 74 122 }
+}
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }

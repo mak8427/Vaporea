@@ -1,0 +1,26 @@
+﻿###########################
+# British Laburist Events
+###########################
+
+add_namespace = britain.labour
+
+# Japanese Stage Border Incident
+country_event = {
+	id = britain.labour.1
+	title = "The Imperial Past"
+	desc = britain.labour.1.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Che figo!"
+		ai_chance = { factor = 50 }
+		add_war_support = 0.05
+	}
+	option = { 
+		name = "Bei tempi!"
+		ai_chance = { factor = 50 }
+		add_stability = 0.05
+	}
+}
