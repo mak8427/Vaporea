@@ -14,12 +14,12 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "... in our blood!!"
+		name = "... in our blood!"
 		ai_chance = { factor = 50 }
 		add_war_support = 0.05
 	}
 	option = { 
-		name = "... in our fleas!"
+		name = "... in our flesh!"
 		ai_chance = { factor = 50 }
 		add_stability = 0.05
 }
@@ -33,7 +33,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = "Che figo!"
+		name = "...a tool workshop"
 		ai_chance = { factor = 50 }
 		add_war_support = 0.05
 	}
