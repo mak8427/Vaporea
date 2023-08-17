@@ -1,0 +1,59 @@
+﻿focus_tree = {
+	id = labourbritish_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = BRT
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 50 y = 1000 }
+
+	focus = {
+		id = the_imperial_past
+		icon = GFX_goal_generic_major_war
+		x = 3
+		y = 5
+		relative_position_id = AST_empower_the_workers
+		
+		available = {
+			NOT = { is_in_faction_with = JAP }
+			NOT = { has_country_flag = britain_enforced_our_loyalty }
+		}
+		bypass = {
+		}
+		
+		cost = 10
+		prerequisite = { focus = AST_workers_paradise }
+				
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				target = JAP
+				type = puppet_wargoal_focus
+				expire = 0 
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				JAP = { has_government = communism }
+				factor = 0
+			}
+		}
+	}
+
+
+
+
+}		
