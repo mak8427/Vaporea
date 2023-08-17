@@ -103,4 +103,33 @@
 			factor = 1
 		}
 	}
+		focus = {
+		id = the_economic_situation
+		icon = GFX_goal_financial_situation
+		x = 10
+		y = 4
+		#relative_position_id = the_imperial_past
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_third_english_revolution_war}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.4
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }		

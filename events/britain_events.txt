@@ -74,3 +74,24 @@ country_event = {
 		add_political_power = 150
 	}
 }
+
+country_event = {
+	id = britain.labour.4
+	title = "The Economic Situation"
+	desc = britain.labour.4.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Nationalise the Companies"
+		ai_chance = { factor = 50 }
+		add_political_power = 50
+		add_ideas = economy_in_disarray
+	}
+	option = {
+		name = ""
+		ai_chance = { factor = 50 }
+		add_political_power = 50
+	}
+}
