@@ -14,6 +14,45 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
+		name = "... in our blood!!"
+		ai_chance = { factor = 50 }
+		add_war_support = 0.05
+	}
+	option = { 
+		name = "... in our fleas!"
+		ai_chance = { factor = 50 }
+		add_stability = 0.05
+}
+
+country_event = {
+	id = britain.labour.2
+	title = "The Infamous War"
+	desc = britain.labour.2.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Che figo!"
+		ai_chance = { factor = 50 }
+		add_war_support = 0.05
+	}
+	option = { 
+		name = "Bei tempi!"
+		ai_chance = { factor = 50 }
+		add_stability = 0.05
+	}
+}
+
+country_event = {
+	id = britain.labour.3
+	title = "The Third English Revolution"
+	desc = britain.labour.3.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
 		name = "Che figo!"
 		ai_chance = { factor = 50 }
 		add_war_support = 0.05

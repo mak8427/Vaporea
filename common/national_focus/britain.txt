@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = cuban_focus
+	id = britain_labour_focus
 	
 	country = {
 		factor = 0
@@ -16,9 +16,9 @@
 
 	focus = {
 		id = the_imperial_past
-		icon = GFX_goal_generic_major_war
-		x = 3
-		y = 5
+		icon = GFX_focus_eng_imperial_federation
+		x = 10
+		y = 1
 		#relative_position_id = AST_empower_the_workers
 		
 		available = {
@@ -26,7 +26,7 @@
 		bypass = {
 		}
 		
-		cost = 0.1
+		cost = 1
 		prerequisite = { }
  
  
@@ -41,10 +41,66 @@
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				JAP = { has_government = communism }
-				factor = 0
+		}
+	}
+	
+	focus = {
+		id = the_infamous_war
+		icon = GFX_focus_AST_never_gallipoli
+		x = 10
+		y = 2
+		#relative_position_id = the_imperial_past
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_imperial_past}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.2
 			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id = the_third_english_revolution_war
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		x = 10
+		y = 3
+		#relative_position_id = the_imperial_past
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_infamous_war}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.3
+			}
+		}
+		ai_will_do = {
+			factor = 1
 		}
 	}
 }		
