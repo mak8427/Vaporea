@@ -1,0 +1,123 @@
+capital = 10
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+}
+
+recruit_character = POL_ar
+recruit_character = POL_acr
+recruit_character = POL_mt
+recruit_character = POL_stc
+recruit_character = POL_aa2
+recruit_character = POL_acgs
+recruit_character = POL_ncm
+recruit_character = POL_nccr
+recruit_character = POL_coi
+recruit_character = POL_democratic_guy
+recruit_character = POL_acd2
+recruit_character = POL_acas
+recruit_character = POL_communist_guy
+recruit_character = POL_ncs
+recruit_character = POL_awt
+recruit_character = POL_pot
+recruit_character = POL_fascist_guy
+recruit_character = POL_ai2
+recruit_character = POL_nt
+recruit_character = POL_aco2
+
+add_ideas = { economy_in_disarray }
+set_convoys = 20
+
+SOV = {
+	set_autonomy = {
+		target = POL
+		autonomous_state = autonomy_puppet
+	}
+}
+
+1939.1.1 = {
+	
+	#generic focuses
+	complete_national_focus = army_effort
+	complete_national_focus = equipment_effort
+	complete_national_focus = motorization_effort
+	complete_national_focus = aviation_effort
+	complete_national_focus = naval_effort
+	complete_national_focus = large_navy
+	complete_national_focus = industrial_effort
+	complete_national_focus = construction_effort
+	complete_national_focus = production_effort
+	
+	set_technology = {
+		tech_support = 1
+		tech_recon = 1
+		support_weapons = 1
+		gw_artillery = 1
+
+		#doctrines
+		air_superiority = 1
+		grand_battle_plan = 1
+		trench_warfare = 1
+		fleet_in_being = 1
+		battlefleet_concentration = 1
+		convoy_sailing = 1
+
+		#electronics
+		electronic_mechanical_engineering = 1
+		radio = 1
+		radio_detection = 1
+		mechanical_computing = 1
+		computing_machine = 1
+
+		#industry
+		basic_machine_tools = 1
+		improved_machine_tools = 1
+		advanced_machine_tools = 1
+		construction1 = 1
+		construction2 = 1
+		dispersed_industry = 1
+		dispersed_industry2 = 1
+	}
+}
+
+
+set_politics = {
+	ruling_party = democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 85
+	fascism = 5
+	communism = 5
+	neutrality = 5
+}
+
+create_country_leader = {
+	name = "Gianluigi Bersani"
+	desc = ""
+	picture = "Grammar.dds"
+	ideology = liberalism
+	traits = {
+		liberal_professor
+	}
+}
+
+1939.1.1 = {
+	set_politics = {
+		ruling_party = neutrality
+		last_election = "1936.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		democratic = 25
+		fascism = 20
+		communism = 5
+		neutrality = 50
+	}
+}
+
