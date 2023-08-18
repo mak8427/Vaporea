@@ -1,5 +1,7 @@
 capital = 371
 
+#starting states 1836: 372, 373, 374, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
