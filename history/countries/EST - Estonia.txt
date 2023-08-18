@@ -82,6 +82,7 @@ SOV = {
 }
 
 
+
 set_politics = {
 	ruling_party = democracy
 	last_election = "1936.1.1"
