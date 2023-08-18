@@ -76,6 +76,12 @@ set_convoys = 20
 	}
 }
 
+FRA = {
+        set_autonomy = {
+            target = LOU
+            autonomous_state = autonomy_colony
+        }
+}
 
 set_politics = {
 	ruling_party = neutrality
