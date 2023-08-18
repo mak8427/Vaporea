@@ -1,5 +1,5 @@
 capital = 64
-#states 1836: 64, 68, 63, 66, 67, 5, 763, 85, 807,
+#states 1836: 5, 763, 85, 807,
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
