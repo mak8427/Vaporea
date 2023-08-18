@@ -20,3 +20,19 @@ country_event = {
 		add_stability = 0.10
 	}
 }
+country_event = {
+	id = ireland.2
+	title = "A Rural country"
+	desc = ireland.1.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "an Industrial Revolution awaits Us!"
+		ai_chance = { factor = 50 }
+		add_ideas = { the_seed_of_industrialisation }
+		add_political_power = 100
+	}
+
+}
