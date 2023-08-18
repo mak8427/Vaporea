@@ -77,21 +77,41 @@ country_event = {
 
 country_event = {
 	id = britain.labour.4
-	title = "The Economic Situation"
+	title = "Crisis in the Commissariat"
 	desc = britain.labour.4.d
 	picture = GFX_berlusca_caramba_event_image
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = "Nationalise the Companies"
-		ai_chance = { factor = 50 }
-		add_political_power = 50
-		add_ideas = economy_in_disarray
+		name = "Iniziamo ad organizzare i seggi elettorali"
+		ai_chance = { factor = 100 }
+		#spawna il giornale con la notizia della chiamata alle urne brittanica
 	}
+}
+
+country_event = {
+	id = britain.labour.5
+	title = "La sconfitta della Rivoluzione"
+	desc = britain.labour.5.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
 	option = {
-		name = ""
-		ai_chance = { factor = 50 }
-		add_political_power = 50
+		name = "I Prottetori delle Rose arriveranno a salvare l'Inghilterra"
+		ai_chance = { factor = 34 }
+		#salita al potere dei fascisti
 	}
+	
+	option = {
+		name = "Dalla Torre di Londra un lungo striscione blu chiama la democrazia"
+		ai_chance = { factor = 34 }
+		#salita al potere dei democratici
+	}
+	
+	option = {
+		name = "Si inizia a spolverare la Corona del Re"
+		ai_chance = { factor = 34 }
+		#salita al potere dei neutrali
 }
