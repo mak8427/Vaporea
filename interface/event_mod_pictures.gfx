@@ -2,6 +2,6 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_berlusca_caramba_event_image"
-		texturefile = "gfx/event_pictures/benito_nazionale.dds"
+		texturefile = "gfx/event_pictures/berlusca_caramba.dds"
 	}
 }
