@@ -1,4 +1,7 @@
 #reload countrycolors
+LOU = { color = { 57  113  228 }
+		color_ui = { 57  113  228 }	
+}
 UNL = {	color = rgb { 204 139 75 }
 		color_ui = rgb { 204 139 75 }
 }
