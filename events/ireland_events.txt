@@ -1,0 +1,22 @@
+add_namespace = ireland
+
+# A mak profuma l'alito di bacon
+country_event = {
+	id = ireland.1
+	title = "A Rising Nation"
+	desc = ireland.1.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will Rise once again!"
+		ai_chance = { factor = 50 }
+		add_war_support = 0.10
+	}
+	option = { 
+		name = "We will be united for our Freedom"
+		ai_chance = { factor = 50 }
+		add_stability = 0.10
+	}
+}
