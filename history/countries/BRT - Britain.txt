@@ -26,7 +26,7 @@ recruit_character = ALG_ai2
 recruit_character = ALG_nt
 recruit_character = ALG_aco2
 
-
+add_ideas = { economy_in_disarray }
 set_convoys = 20
 
 1939.1.1 = {

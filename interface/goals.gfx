@@ -6,6 +6,33 @@ spriteTypes = {
 	texturefile = "gfx/interface/goals/focus_BRT_financial_situation.dds"			
 	}
 
+
+
+	SpriteType = {
+		name = "GFX_goal_a_rising_nation_"
+		texturefile = "gfx/interface/goals/IRE_rising_nation.dds"			
+	}
+
+
+
+
+
+
+
+
+f
+
+
+
+
+
+
+
+
+
+
+	#############################
+
 	SpriteType = {
 	name = "GFX_goal_continuous_air_production"
 	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
