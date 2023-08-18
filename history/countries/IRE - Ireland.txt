@@ -89,7 +89,7 @@ create_country_leader = {
 	name = "Makkeroni Russovsky"
 	desc = ""
 	picture = "Grammar.dds"
-	ideology = libertarian
+	ideology = liberalism
 	traits = {
 		dictator
 	}

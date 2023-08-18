@@ -5,26 +5,26 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-recruit_character = POL_ar
-recruit_character = POL_acr
-recruit_character = POL_mt
-recruit_character = POL_stc
-recruit_character = POL_aa2
-recruit_character = POL_acgs
-recruit_character = POL_ncm
-recruit_character = POL_nccr
-recruit_character = POL_coi
-recruit_character = POL_democratic_guy
-recruit_character = POL_acd2
-recruit_character = POL_acas
-recruit_character = POL_communist_guy
-recruit_character = POL_ncs
-recruit_character = POL_awt
-recruit_character = POL_pot
-recruit_character = POL_fascist_guy
-recruit_character = POL_ai2
-recruit_character = POL_nt
-recruit_character = POL_aco2
+##recruit_character = POL_ar
+##recruit_character = POL_acr
+##recruit_character = POL_mt
+#recruit_character = POL_stc
+#recruit_character = POL_aa2
+#recruit_character = POL_acgs
+#recruit_character = POL_ncm
+#recruit_character = POL_nccr
+#recruit_character = POL_coi
+#recruit_character = POL_democratic_guy
+#recruit_character = POL_acd2
+#recruit_character = POL_acas
+#recruit_character = POL_communist_guy
+#recruit_character = POL_ncs
+#recruit_character = POL_awt
+#recruit_character = POL_pot
+#recruit_character = POL_fascist_guy
+#recruit_character = POL_ai2
+#recruit_character = POL_nt
+#recruit_character = POL_aco2
 
 add_ideas = { economy_in_disarray }
 set_convoys = 20
@@ -83,7 +83,7 @@ SOV = {
 
 
 set_politics = {
-	ruling_party = democracy
+	ruling_party = democratic
 	last_election = "1936.1.1"
 	election_frequency = 48
 	elections_allowed = yes

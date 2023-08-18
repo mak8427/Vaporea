@@ -114,4 +114,5 @@ country_event = {
 		name = "Si inizia a spolverare la Corona del Re"
 		ai_chance = { factor = 34 }
 		#salita al potere dei neutrali
+	}
 }
