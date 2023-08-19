@@ -1,9 +1,9 @@
 characters={
     BRT_oswald_mosley={
-		name=BRT_oswald_mosley
+		name = "Oswald Mosley"
 		portraits={
 			civilian={
-				large=GFX_portrait_BRT_Oswald_Mosley
+				large= "gfx/leaders/BRT/Oswald_Mosley.dds"
 			}
 			
 		}
@@ -32,4 +32,36 @@ characters={
 		}
 	}
 
+	BRT_harry_politt={
+		name = "Harry Politt"
+		portraits={
+			civilian={
+				large= "gfx/leaders/BRT/Harry_Politt.dds"
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BRT_harry_politt
+			available  = {
+				has_government  = communism
+			}
+			allowed  = {
+				original_tag  = BRT
+			}
+			traits  = {
+				staunch_stalinist 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		
+		country_leader={
+			ideology=stalinism
+			traits={ staunch_stalinist }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
 }

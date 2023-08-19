@@ -91,7 +91,7 @@ recruit_character = IRE_sean_ceallaigh
 	}
 }
 create_country_leader = {
-	name = "Éamon de Valera"
+	name = "Éamon Valera"
 	desc = ""
 	picture = "Valera.dds"
 	ideology = liberalism
@@ -111,7 +111,7 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "William Norton"
+	name = "William  Norton"
 	desc = ""
 	picture = "Norton.dds"
 	ideology = stalinism
