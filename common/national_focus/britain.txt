@@ -1,5 +1,5 @@
 ﻿focus_tree = {
-	id = britain_labour_focus
+	id = britain_focus
 	
 	country = {
 		factor = 0
@@ -134,13 +134,13 @@
 	}
 	
 	focus = {
-		id = vittoria_degli_alti
+		id = triumph_for_the_high_laburist
 		icon = GFX_goal_financial_situation
 		x = 7
 		y = 4
 		#relative_position_id = the_imperial_past
 		
-		available = {#in opposizione agli altri
+		available = {
 		}
 		bypass = {
 		}
@@ -148,16 +148,18 @@
 		cost = 1
 		prerequisite = { focus = crisis_in_the_commissariat
 		}
-		mutually_exclusive = { focus = vittoria_dei_bassi	}
-		mutually_exclusive = { focus = la_sconfitta_della_rivoluzione	}
+		mutually_exclusive = { focus = victory_for_the_low_laburist	}
+		mutually_exclusive = { focus = the_revolution_has_failed	}
  
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event = {
-				id = britain.labour.4
+			set_party_name = {
+				ideology = communism
+				long_name = BRT_communism_hlab_party_long
+				name = BRT_communism_hlab_party
 			}
 		}
 		ai_will_do = {
@@ -166,7 +168,7 @@
 	}
 	
 	focus = {
-		id = vittoria_dei_bassi
+		id = victory_for_the_low_laburist
 		icon = GFX_goal_financial_situation
 		x = 13
 		y = 4
@@ -179,8 +181,8 @@
 		
 		cost = 1
 		prerequisite = { focus = crisis_in_the_commissariat}
-		mutually_exclusive = { focus = vittoria_degli_alti	}
-		mutually_exclusive = { focus = la_sconfitta_della_rivoluzione	}
+		mutually_exclusive = { focus = triumph_for_the_high_laburist	}
+		mutually_exclusive = { focus = the_revolution_has_failed	}
  
  
 		cancel_if_invalid = yes
@@ -188,8 +190,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event = {
-				id = britain.labour.4
+			set_party_name = {
+				ideology = communism
+				long_name = BRT_communism_llab_party_long
+				name = BRT_communism_llab_party
 			}
 		}
 		ai_will_do = {
@@ -198,21 +202,22 @@
 	}
 	
 	focus = {
-		id = la_sconfitta_della_rivoluzione
+		id = the_revolution_has_failed
 		icon = GFX_goal_financial_situation
 		x = 10
 		y = 4
 		#relative_position_id = the_imperial_past
 		
-		available = {
+		available = { 					
 		}
+		
 		bypass = {
 		}
 		
 		cost = 1
 		prerequisite = { focus = crisis_in_the_commissariat}
-		mutually_exclusive = { focus = vittoria_degli_alti	}
-		mutually_exclusive = { focus = vittoria_dei_bassi	}
+		mutually_exclusive = { focus = triumph_for_the_high_laburist	}
+		mutually_exclusive = { focus = victory_for_the_low_laburist	}
  
  
 		cancel_if_invalid = yes
@@ -230,13 +235,13 @@
 	}
 	
 	focus = {
-		id = La_rinascita_delle_Rose
+		id = the_rebirth_of_the_roses
 		icon = GFX_focus_eng_imperial_federation
 		x = 20
 		y = 0
 		#relative_position_id = AST_empower_the_workers
 		
-		available = { #if ruling party fascist
+		available = { has_event_target = roses_win
 		}
 		bypass = {
 		}
@@ -253,6 +258,7 @@
 			country_event = {
 				id = britain.labour.1
 			}
+			clear_global_event_target = roses_win
 		}
 		ai_will_do = {
 			factor = 1
@@ -260,13 +266,13 @@
 	}
 	
 	focus = {
-		id = Il_ritorno_del_Re
+		id = the_return_of_the_king
 		icon = GFX_focus_eng_imperial_federation
 		x = 30
 		y = 0
 		#relative_position_id = AST_empower_the_workers
 		
-		available = { #if ruling party democracy or neutralism
+		available = { has_event_target = king_win
 		}
 		bypass = {
 		}
@@ -283,6 +289,7 @@
 			country_event = {
 				id = britain.labour.1
 			}
+			clear_global_event_target = king_win
 		}
 		ai_will_do = {
 			factor = 1
