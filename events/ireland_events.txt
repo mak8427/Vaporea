@@ -23,7 +23,7 @@ country_event = {
 country_event = {
 	id = ireland.2
 	title = "A Rural country"
-	desc = ireland.1.d
+	desc = ireland.2.d
 	picture = GFX_berlusca_caramba_event_image
 	
 	is_triggered_only = yes
