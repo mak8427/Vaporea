@@ -173,17 +173,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_opinion_modifier = { target = BRT modifier = medium_decrease }
-			country_event = {
-				id = ireland.5
-			}
-			BRT = {
-				country_event = ireland.6
-				add_opinion_modifier = {
-						target = IRE
-						modifier = medium_decrease
-					}
-				}
+
 		}
 		ai_will_do = {
 			factor = 0.9
@@ -213,17 +203,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_opinion_modifier = { target = BRT modifier = medium_decrease }
-			country_event = {
-				id = ireland.5
-			}
-			BRT = {
-				country_event = ireland.6
-				add_opinion_modifier = {
-						target = IRE
-						modifier = medium_decrease
-					}
-				}
+
 		}
 		ai_will_do = {
 			factor = 0.9
@@ -256,17 +236,6 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_opinion_modifier = { target = BRT modifier = medium_decrease }
-			country_event = {
-				id = ireland.5
-			}
-			BRT = {
-				country_event = ireland.6
-				add_opinion_modifier = {
-						target = IRE
-						modifier = medium_decrease
-					}
-				}
 		}
 		ai_will_do = {
 			factor = 0.9
@@ -337,6 +306,16 @@ focus_tree = {
 		prerequisite = { focus=IRE_reconciliation_with_the_British }
 		mutually_exclusive = {focus = IRE_british_declined_us }
 
+		completion_reward = {
+			add_opinion_modifier = { target = BRT modifier = medium_increase }
+			
+			BRT = {
+				add_opinion_modifier = {
+						target = IRE
+						modifier = medium_increase
+					}
+				}
+		}
  
  
 		cancel_if_invalid = yes
@@ -377,9 +356,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id =  IRE_seek_industrial_cooperation
-		icon = GFX_focus_generic_industry_1
-		x = 5
+		id =  IRE_consolidate_political_support
+		icon = GFX_focus_generic_court
+		x = 7
 		y = 5
 		#relative_position_id = AST_empower_the_workers
 		
@@ -395,7 +374,7 @@ focus_tree = {
 			add_idea = the_seed_of_industrialisation_2c
 			}
 		}
-		}
+		
 
  
  
@@ -408,5 +387,37 @@ focus_tree = {
 			factor = 0.7
 		}
 	}
-	
+	focus = {
+		id =  IRE_industrial_cooperation
+		icon = GFX_focus_generic_industry_1
+		x = 5 
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_british_accepted_us }
+		completion_reward = {
+			add_stability=0.1
+			country_event = {
+				id = ireland.7
+			}
+		}
+		
+
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
 }
