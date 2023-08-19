@@ -18,6 +18,7 @@ add_opinion_modifier = {
 	modifier = medium_decrease
 
 }
+
 set_convoys = 10
 
 recruit_character = IRE_Éamon_de_valera
