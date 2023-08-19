@@ -73,7 +73,11 @@ set_convoys = 20
 		dispersed_industry2 = 1
 	}
 }
+add_opinion_modifier = {
+	target = IRE
+	modifier = medium_decrease
 
+}
 
 set_politics = {
 	ruling_party = communism

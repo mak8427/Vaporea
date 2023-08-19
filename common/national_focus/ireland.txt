@@ -130,7 +130,7 @@ focus_tree = {
 			}
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0.2
 		}
 	}
 	
@@ -157,11 +157,75 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_opinion_modifier = { target = BRT modifier = large_decrease }
+			add_opinion_modifier = { target = BRT modifier = medium_increase }
+			
+			BRT = {
+				country_event = ireland.4
+				add_opinion_modifier = {
+						target = IRE
+						modifier = medium_increase
+					}
+				}
+		}
+			
 
+		
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	focus = {
+		id =  IRE_british_accepted_us
+		icon = GFX_focus_SOV_my_brothers_keeper
+		x = 1
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = { has_event_target = IRE_britain_recouncilation }
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_reconciliation_with_the_British }
+		mutually_exclusive = {focus = IRE_british_declined_us }
+
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
 		}
 		ai_will_do = {
-			factor = 1
+			factor = 0.7
+		}
+	}
+	focus = {
+		id =  IRE_british_declined_us
+		icon = GFX_focus_EST_rally_the_nation
+		x = 3
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = { has_event_target = IRE_britain_decline }
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_reconciliation_with_the_British }
+		mutually_exclusive = {focus = IRE_british_accepted_us }
+
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 0.7
 		}
 	}
 }
