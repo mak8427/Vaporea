@@ -103,6 +103,45 @@ create_country_leader = {
 	}
 }
 
+create_country_leader = {
+	name = "Labour Council"
+	desc = BRT_labour_council.d
+	picture = "BRT_Labour_council.dds"
+	ideology = stalinism
+	traits = {
+		cabinet_crisis
+	}
+}
+
+create_country_leader = {
+	name = "Winston Churchill"
+	picture = "Winston_Churchill.dds"
+	ideology = fascism_ideology
+	traits = {
+		british_bulldog
+	}
+}
+
+create_country_leader = {
+	name = "Neville Chamberlain"
+	picture = "Neville_Chamberlain.dds"
+	ideology = liberalism
+	traits = {
+		chamberlain_appeaser 
+		rearmer
+	}
+}
+
+create_country_leader = {
+	name = "Edward VIII"
+	picture = "Edward_VIII.dds"
+	ideology = despotism
+	traits = {
+		exile_king
+	}
+}
+
+
 1939.1.1 = {
 	set_politics = {
 		ruling_party = neutrality

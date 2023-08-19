@@ -65,4 +65,51 @@ characters={
 			id=-1
 		}
 	}
+
+	BRT_winston_churchill={
+		name= "Winston_Churchill"
+		portraits={
+			civilian={
+				large= "gfx/leaders/BRT/Winston_Churchill.dds"
+			}
+			army={
+				small="GFX_idea_BRT_winston_churchill"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BRT_winston_churchill
+			available  = {
+				has_government  = fascism 
+				if  = {
+					limit  = {
+						has_dlc = "Man the Guns"
+					}
+					NOT = {
+						has_autonomy_state  = autonomy_supervised_state
+					}
+				}
+			}
+			allowed  = {
+				original_tag  = BRT
+				has_dlc = "Man the Guns"
+			}
+			traits  = {
+				royalist_bulldog 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+
+		country_leader={
+			ideology=conservatism
+			traits = {
+				british_bulldog
+			}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 }
