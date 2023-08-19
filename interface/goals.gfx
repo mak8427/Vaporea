@@ -20,7 +20,10 @@ spriteTypes = {
 		name = "GFX_IRE_based"
 		textureFile ="gfx/interface/goals/focus_IRE_based.dds"
 	}
-	
+	SpriteType = {
+		name = "GFX_IRE_army_sent_"
+		textureFile ="gfx/interface/goals/focus_IRE_army_sent.dds"
+	}
 
 	SpriteType = {
 		name = "GFX_goal_a_rising_nation_"
