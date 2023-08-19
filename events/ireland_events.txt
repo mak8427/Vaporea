@@ -12,12 +12,12 @@ country_event = {
 	option = {
 		name = "We will Rise once again!"
 		ai_chance = { factor = 50 }
-		add_war_support = 0.10
+		add_war_support = 0.05
 	}
 	option = { 
 		name = "We will be united for our Freedom"
 		ai_chance = { factor = 50 }
-		add_stability = 0.10
+		add_stability = 0.05
 	}
 }
 country_event = {
@@ -65,5 +65,57 @@ country_event = {
 		name = "The Irish are only rebels!"
 		ai_chance = { factor = 10 }
 		save_global_event_target_as = IRE_britain_decline
+	}
+}
+country_event = {
+	id = ireland.5
+	title = "Public denunciation of the British massacres"
+	desc = ireland.5.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "They will pay for their crimes!"
+		ai_chance = { factor = 90 }
+		add_war_support = 0.10
+		add_opinion_modifier = { target = BRT modifier = medium_decrease }
+		BRT = {
+			country_event={ id = ireland.6 }
+			add_opinion_modifier = {
+					target = IRE
+					modifier = medium_decrease
+				}
+			}
+		add_popularity = { ideology = fascism popularity = 0.10 }
+	}
+	option = {
+		name = "The is no need to polarize the situation"
+		ai_chance = { factor = 10 }
+		add_war_support = 0.05
+		add_popularity = { ideology = fascism popularity = -0.10 }
+	}
+}
+country_event = {
+	id = ireland.6
+	title = "Dissent in Northen Ireland"
+	desc = ireland.6.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Send the Army to restore order!"
+		ai_chance = { factor = 10 } 
+		119={ add_compliance = -0.20 }
+
+
+	}
+	option = {
+		name = "let them be, they will come to their senses"
+		ai_chance = { factor = 90 }
+		119={ add_resistance = 0.30 }
+		add_stability = -0.1
+
 	}
 }

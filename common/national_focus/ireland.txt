@@ -124,13 +124,22 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+
 		completion_reward = {
+			add_opinion_modifier = { target = BRT modifier = medium_decrease }
 			country_event = {
-				id = ireland.3
+				id = ireland.5
 			}
+			BRT = {
+				country_event = ireland.6
+				add_opinion_modifier = {
+						target = IRE
+						modifier = medium_decrease
+					}
+				}
 		}
 		ai_will_do = {
-			factor = 0.2
+			factor = 0.9
 		}
 	}
 	
@@ -171,7 +180,7 @@ focus_tree = {
 
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 0.2
 		}
 	}
 	focus = {
