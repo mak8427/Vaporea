@@ -17,7 +17,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_a_rising_nation
 		icon = GFX_goal_continuous_boost_freedom
-		x = 10
+		x = 15
 		y = 0
 		#relative_position_id = AST_empower_the_workers
 		
@@ -47,7 +47,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_a_rural_country
 		icon = GFX_focus_generic_steel
-		x = 10
+		x = 15
 		y = 1
 		#relative_position_id = AST_empower_the_workers
 		
@@ -77,7 +77,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_political_instability
 		icon = GFX_focus_BUL_destroy_the_zveno
-		x = 10
+		x = 15
 		y = 2
 		#relative_position_id = AST_empower_the_workers
 		
@@ -103,10 +103,17 @@ focus_tree = {
 			factor = 1
 		}
 	}
+
+	#
+	#
+	#
+	#OUR VITAL INTERESTS
+	#
+	#
 	focus = {
 		id =  IRE_our_vital_interests
 		icon = GFX_focus_ETH_freedom_at_gunpoint
-		x = 18
+		x = 23
 		y = 3
 		#relative_position_id = AST_empower_the_workers
 		
@@ -142,11 +149,112 @@ focus_tree = {
 			factor = 0.9
 		}
 	}
-	
+	focus = {
+		id =  IRE_they_sent_the_army
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 24
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+			has_event_target=IRE_bri_sent_the_army
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_our_vital_interests }
+		mutually_exclusive = { focus = IRE_they_did_nothing	}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+		ai_will_do = {
+			factor = 0.9
+		}
+	}
+	focus = {
+		id =  IRE_they_did_nothing
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 22
+		y = 4
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+			has_event_target=IRE_bri_did_nothing
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_our_vital_interests }
+		mutually_exclusive = { focus = IRE_they_sent_the_army	}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+
+		}
+		ai_will_do = {
+			factor = 0.9
+		}
+	}
+
+
+
+	focus = {
+		id =  insurrections_in_northern_ireland
+		icon = GFX_focus_ETH_peacekeeping_forces
+		x = 23
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus =IRE_they_did_nothing  focus=IRE_they_sent_the_army focus = IRE_british_declined_us }
+		
+		mutually_exclusive = { focus = IRE_reconciliation_with_the_British	}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		}
+		ai_will_do = {
+			factor = 0.9
+		}
+	}
+
+
+
+	#
+	#
+	#RECONCILIATION WITH THE BRITISH
+	#
+	#
+	#
+	#
 	focus = {
 		id =  IRE_reconciliation_with_the_British
 		icon = GFX_focus_generic_court
-		x = 2
+		x = 7
 		y = 3
 		#relative_position_id = AST_empower_the_workers
 		
@@ -186,7 +294,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_british_accepted_us
 		icon = GFX_focus_SOV_my_brothers_keeper
-		x = 1
+		x = 6
 		y = 4
 		#relative_position_id = AST_empower_the_workers
 		
@@ -198,15 +306,23 @@ focus_tree = {
 		prerequisite = { focus=IRE_reconciliation_with_the_British }
 		mutually_exclusive = {focus = IRE_british_declined_us }
 
+		completion_reward = {
+			add_opinion_modifier = { target = BRT modifier = medium_increase }
+			
+			BRT = {
+				add_opinion_modifier = {
+						target = IRE
+						modifier = medium_increase
+					}
+				}
+		}
  
  
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		completion_reward = {
-			
-		}
+
 		ai_will_do = {
 			factor = 0.7
 		}
@@ -214,7 +330,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_british_declined_us
 		icon = GFX_focus_EST_rally_the_nation
-		x = 3
+		x = 8
 		y = 4
 		#relative_position_id = AST_empower_the_workers
 		
@@ -226,6 +342,41 @@ focus_tree = {
 		prerequisite = { focus=IRE_reconciliation_with_the_British }
 		mutually_exclusive = {focus = IRE_british_accepted_us }
 
+		completion_reward = {
+			
+		}
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	focus = {
+		id =  IRE_consolidate_political_support
+		icon = GFX_focus_generic_court
+		x = 7
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_british_accepted_us focus = IRE_british_declined_us }
+
+		completion_reward = {
+			add_stability=0.1
+			country_event = {
+				id = ireland.7
+			}
+		}
+		
+
  
  
 		cancel_if_invalid = yes
@@ -237,4 +388,37 @@ focus_tree = {
 			factor = 0.7
 		}
 	}
+	focus = {
+		id =  IRE_industrial_cooperation
+		icon = GFX_focus_generic_industry_1
+		x = 5 
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_british_accepted_us }
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = the_seed_of_industrialisation
+			add_idea = the_seed_of_industrialisation_2c
+			}
+		}
+		
+
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+
 }

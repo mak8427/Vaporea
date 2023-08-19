@@ -1,8 +1,16 @@
 characters = {
-	SPR_alfonso_bourbon={
-		name=SPR_alfonso_bourbon
-		portraits={
-				large=GFX_portrait_SPR_alfonso_bourbon
+	SPR_alfonso_bourbon = {
+		name = SPR_alfonso_bourbon
+		portraits = {
+				civilian = {
+					large = "gfx\leaders\SPR\Portrait_Spain_AlfonsoXIII.dds"
+				}
+		}
+		country_leader = {
+			ideology = despotism
+			traits = { unpopular_monarch }
+			expire = 1941.02.28.12
+			desc = alfonso_bourbon_desc
 		}
 	}
 }

@@ -58,13 +58,6 @@ if = {
 	recruit_character = SPR_augusto_barcia_trelles
 	recruit_character = SPR_francisco_largo_caballero
 
-	set_popularities = {
-		democratic = 47
-		fascism = 46
-		communism = 7
-	}
-}
-
 if = {
 	limit = {
 		has_dlc = "Battle for the Bosporus"
@@ -72,6 +65,7 @@ if = {
 	set_technology = { camelry = 1 }
 }
 
+recruit_character = SPR_alfonso_bourbon
 recruit_character = SPR_niceto_alcala_zamora
 recruit_character = SPR_jose_diaz
 recruit_character = SPA_jose_antonio_primo_de_rivera
@@ -218,12 +212,12 @@ if = {
 }
 
 set_research_slots = 3
-set_stability = 0.3
-set_war_support = 0.2
+set_stability = 0.4
+set_war_support = 0.4
 
 set_politics = {
 	ruling_party = neutrality
-	last_election = ""
+	last_election = "1886.05.17"
 	election_frequency = 0
 	elections_allowed = no
 }
