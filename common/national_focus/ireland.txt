@@ -103,11 +103,10 @@ focus_tree = {
 			factor = 1
 		}
 	}
-	
 	focus = {
-		id =  IRE_political_par
-		icon = GFX_focus_generic_steel
-		x = 10
+		id =  IRE_our_vital_interests
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		x = 18
 		y = 3
 		#relative_position_id = AST_empower_the_workers
 		
@@ -117,7 +116,40 @@ focus_tree = {
 		}
 		
 		cost = 1
-		prerequisite = { focus=a_rising_nation }
+		prerequisite = { focus=IRE_political_instability }
+		mutually_exclusive = { focus = IRE_reconciliation_with_the_British	}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = ireland.3
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	focus = {
+		id =  IRE_reconciliation_with_the_British
+		icon = GFX_focus_generic_court
+		x = 2
+		y = 3
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_political_instability }
+		mutually_exclusive = {focus = IRE_our_vital_interests }
+
  
  
 		cancel_if_invalid = yes
