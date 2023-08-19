@@ -181,7 +181,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_they_did_nothing
-		icon = GFX_focus_ETH_freedom_at_gunpoint
+		icon = GFX_IRE_based
 		x = 22
 		y = 4
 		#relative_position_id = AST_empower_the_workers
@@ -293,7 +293,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_british_accepted_us
-		icon = GFX_focus_SOV_my_brothers_keeper
+		icon = GFX_IRE_britain_accepted
 		x = 6
 		y = 4
 		#relative_position_id = AST_empower_the_workers
@@ -329,7 +329,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_british_declined_us
-		icon = GFX_focus_EST_rally_the_nation
+		icon = GFX_IRE_britain_rejected
 		x = 8
 		y = 4
 		#relative_position_id = AST_empower_the_workers
