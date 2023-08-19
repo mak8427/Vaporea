@@ -86,16 +86,43 @@ recruit_character = IRE_sean_ceallaigh
 	}
 }
 create_country_leader = {
-	name = "Makkeroni Russovsky"
+	name = "Éamon de Valera"
 	desc = ""
-	picture = "Grammar.dds"
+	picture = "Éamon_de_Valera.dds"
 	ideology = liberalism
 	traits = {
-		dictator
+		
 	}
 }
 
+create_country_leader = {
+	name = " Thomas F. O'Higgins"
+	desc = ""
+	picture = "Higgins.dds"
+	ideology = falangism
+	traits = {
+		
+	}
+}
 
+create_country_leader = {
+	name = "William Norton"
+	desc = ""
+	picture = "William_Norton.dds"
+	ideology = stalinism
+	traits = {
+		
+	}
+}
+create_country_leader = {
+	name = "W. T. Cosgrave"
+	desc = ""
+	picture = "W._T._Cosgrave.dds"
+	ideology = centrism
+	traits = {
+		
+	}
+}
 
 
 set_politics = {
