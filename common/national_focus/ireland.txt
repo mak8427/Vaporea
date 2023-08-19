@@ -173,7 +173,9 @@ focus_tree = {
 
 
 		completion_reward = {
-
+			country_event = {
+				id = ireland.9
+			}
 		}
 		ai_will_do = {
 			factor = 0.9
@@ -203,6 +205,9 @@ focus_tree = {
 
 
 		completion_reward = {
+			country_event = {
+				id = ireland.8
+			}
 
 		}
 		ai_will_do = {
@@ -213,7 +218,7 @@ focus_tree = {
 
 
 	focus = {
-		id =  insurrections_in_northern_ireland
+		id =  IRE_insurrections_in_northern_ireland
 		icon = GFX_focus_ETH_peacekeeping_forces
 		x = 23
 		y = 5

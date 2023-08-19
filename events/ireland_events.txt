@@ -124,7 +124,7 @@ country_event = {
 	country_event = {
 		id = ireland.7
 		title = "Stabilise the political situation"
-		desc = ireland.6.d
+		desc = ireland.7.d
 		picture = GFX_berlusca_caramba_event_image
 		
 		is_triggered_only = yes
@@ -149,4 +149,174 @@ country_event = {
 			add_stability = 0.05
 			add_popularity = { ideology = democracy popularity = 0.10 }
 		}
+}
+country_event = {
+	id = ireland.8
+	title = "They didn't react"
+	desc = ireland.8.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Send military support"
+		add_manpower = -1000
+		add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+	
+			amount = -100
+	
+		} 
+		add_opinion_modifier = {
+			target = BRT
+			modifier = medium_decrease
+		}
+		BRT={
+			country_event={ id = ireland.10 }
+			add_opinion_modifier = {
+					target = IRE
+					modifier = medium_decrease
+				}
+			}
+		
+		119={ add_resistance = 20 
+			 add_compliance = -20 }
+		ai_chance = { factor = 50 }
+		}
+	option = {
+		name = "We will not intervene"
+		ai_chance = { factor = 50 }
+		add_opinion_modifier = {
+			target = BRT
+			modifier = small_increase
+		}
+		BRT={
+			add_opinion_modifier = {
+					target = IRE
+					modifier = small_increase
+				}
+			}
+		add_stability = 0.05
+		}	
+}
+
+country_event = {
+	id = ireland.9
+	title = "They Reacted!"
+	desc = ireland.8.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We need to defend our people"
+		add_manpower = -3000
+		add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+	
+			amount = -300
+	
+		} 
+		add_opinion_modifier = {
+			target = BRT
+			modifier = medium_decrease
+		}
+		BRT={
+			country_event={ id = ireland.10}
+			add_opinion_modifier = {
+					target = IRE
+					modifier = medium_decrease
+				}
+			
+			}
+		
+		119={ add_resistance = 30 
+			 add_compliance = -25 }
+		ai_chance = { factor = 50 }
+		}
+	option = {
+		name = "It's too risky"
+		ai_chance = { factor = 50 }
+		add_opinion_modifier = {
+			target = BRT
+			modifier = small_increase
+		}
+		BRT={
+			add_opinion_modifier = {
+					target = IRE
+					modifier = small_increase
+				}
+			}
+		add_stability = 0.05
+		}	
+}
+country_event = {
+	id = ireland.10
+	title = "Clashes in northen Ireland"
+	desc = ireland.8.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Crush the rebels scum!"
+		add_manpower = -5000
+		add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+	
+			amount = -600
+	
+		} 
+		add_opinion_modifier = {
+			target = IRE
+			modifier = medium_decrease
+		}
+		IRE={
+			add_opinion_modifier = {
+					target = IRE
+					modifier = medium_decrease
+				}
+			
+			}
+		
+		119={ add_resistance = -50 
+			 add_compliance = -5 }
+		ai_chance = { factor = 50 }
+		add_stability = -0.05
+		add_threat = 5
+		}
+	option = {
+		name = "Reinforce the local police"
+		add_manpower = -1000
+		add_equipment_to_stockpile = {
+
+			type = infantry_equipment_1
+	
+			amount = -300
+	
+		} 
+		add_opinion_modifier = {
+			target = IRE
+			modifier = small_decrease
+		}
+		IRE={
+			add_opinion_modifier = {
+					target = IRE
+					modifier = small_decrease
+				}
+			
+			}
+		
+		119={ add_resistance = -20 }
+		ai_chance = { factor = 50 }
+		}	
+		option = {
+			name = "Cover up the situation"
+			add_stability = 0.10
+			
+			ai_chance = { factor = 50 }
+			}
 }
