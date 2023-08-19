@@ -12,6 +12,7 @@
  BRT_neutrality_ADJ:0 "British"
  BRT_communism_ADJ:0 "British"
  BRT:0 "Britain"
+ BRT_communism_ADJ:0 "Labourist"
  BRT_DEF:0 "Britain"
  BRT_ADJ:0 "British"
  BRT_democratic_subject:0 "$OVERLORDADJ$ Britain"
@@ -42,8 +43,23 @@
  LOU_communism_subject_DEF:0 "the Socialist Republic of Lousiana"
  LOU_FRA_neutrality:0 "Viceroyauté of Louisiana"
  LOU_FRA_neutrality_DEF:0 "the Viceroyauté of Louisiana"
- 
-
-
-
-
+ LOU_DEF:0 "Lousiana"
+ LOU_ADJ:0 "Lousianan"
+ POR_fascism:0 "Protectorate of Portugal and Brazil"
+ POR_fascism_DEF:0 "the Protectorate of Portugal and Brazil"
+ POR_democratic:0 "Republic of Portugal and Brazil"
+ POR_democratic_DEF:0 "the Republic of Portugal and Brazil"
+ POR_neutrality:0 "Empire of Portugal and Brazil"
+ POR_neutrality_DEF:0 "the Empire of Portugal and Brazil"
+ POR_communism:0 "Communist Union of Portugal and Brazil"
+ POR_communism_DEF:0 "the Communist Union of Portugal and Brazil"
+ POR_democratic_subject:0 "$OVERLORDADJ$ Supervised Portugal and Brazil"
+ POR_democratic_subject_DEF:0 "the $OVERLORDADJ$ Supervised Portugal and Brazil"
+ POR_neutrality_subject:0 "$OVERLORDADJ$ Reino of Portugal and Brazil"
+ POR_neutrality_subject_DEF:0 "the $OVERLORDADJ$ Reino of Portugal and Brazil"
+ POR_fascism_subject:0 "$OVERLORDADJ$ Protectorate of Portugal and Brazil"
+ POR_fascism_subject_DEF:0 "the $OVERLORDADJ$ Protectorate of Portugal and Brazil"
+ POR_communism_subject:0 "Communist Union of Portugal and Brazil"
+ POR_communism_subject_DEF:0 "the Communist Union of Portugal and Brazil"
+ POR_DEF:0 "Portugal and Brazil"
+ POR_ADJ:0 "Portobrazilian"
