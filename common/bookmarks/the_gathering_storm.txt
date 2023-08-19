@@ -37,7 +37,7 @@ bookmarks = {
 				FRA_je_suis_la_deluge
 			}
 		}
-		"USA"={
+		"SPR"={
 			history = "USA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
@@ -155,7 +155,7 @@ bookmarks = {
 
 			}			
 		}
-		"SOV"={
+		"LOU"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			available = { has_dlc = "No Step Back" }
@@ -170,7 +170,7 @@ bookmarks = {
 				SOV_reconvene_the_zemsky_sobor
 			}	
 		}
-		"SOV"={
+		"LOU"={
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			available = { NOT = { has_dlc = "No Step Back" } }
