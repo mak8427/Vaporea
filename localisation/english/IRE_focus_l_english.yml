@@ -1,4 +1,9 @@
 ﻿l_english:
-  ireland_focus:0 "Irish Focus"
-  a_rising_nation:0 "A Rising Nation"
-  a_rural_country:0 "A Rural Country"
+  IRE_ireland_focus:0 "Irish Focus"
+  IRE_a_rising_nation:0 "A Rising Nation"
+  IRE_a_rising_nation_desc:0 "The Irish Free State is a young nation, and its future is uncertain. The country is still divided between those who accepted the Treaty as a step towards independence and those who fought on for a complete Irish Republic. This division persists, influencing the country's politics and leading to the emergence of opposing parties."
+  IRE_a_rural_country:0 "A Rural Country"
+  IRE_political_instability:0 "Political Instability"
+  IRE_reconciliation_with_the_British:0 "Reconciliation with the British"
+  IRE_our_vital_interests:0 "Our Vital Interests"
+
