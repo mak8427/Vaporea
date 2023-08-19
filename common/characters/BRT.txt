@@ -1,0 +1,35 @@
+characters={
+    BRT_oswald_mosley={
+		name=BRT_oswald_mosley
+		portraits={
+			civilian={
+				large=GFX_portrait_BRT_Oswald_Mosley
+			}
+			
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = BRT_oswald_mosley
+			available  = {
+				has_government  = communism
+			}
+			allowed  = {
+				original_tag  = BRT
+			}
+			traits  = {
+				economic_organizer 
+			}
+			ai_will_do  = {
+				factor  = 1.000
+			}
+		}
+		
+		country_leader={
+			ideology=stalinism
+			traits={ champion_of_peace_1 economic_reformer }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+}

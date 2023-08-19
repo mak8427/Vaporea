@@ -37,7 +37,7 @@ country_event = {
 country_event = {
 		id = ireland.3
 		title = "Political Instability"
-		desc = ireland.2.d
+		desc = ireland.3.d
 		picture = GFX_berlusca_caramba_event_image
 		
 		is_triggered_only = yes
@@ -47,4 +47,23 @@ country_event = {
 			ai_chance = { factor = 50 }
 			add_political_power = 100
 		}
+}
+country_event = {
+	id = ireland.4
+	title = "Recouncilation with Ireland"
+	desc = ireland.4.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "The Irish are our brothers!"
+		ai_chance = { factor = 90 }
+		save_global_event_target_as = IRE_britain_recouncilation
+	}
+	option = {
+		name = "The Irish are only rebels!"
+		ai_chance = { factor = 10 }
+		save_global_event_target_as = IRE_britain_decline
+	}
 }

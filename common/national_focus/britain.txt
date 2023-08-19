@@ -134,7 +134,7 @@
 	}
 	
 	focus = {
-		id = triumph_for_the_high_laburist
+		id = triumph_for_the_high_labour
 		icon = GFX_goal_financial_situation
 		x = 7
 		y = 4
@@ -148,7 +148,7 @@
 		cost = 1
 		prerequisite = { focus = crisis_in_the_commissariat
 		}
-		mutually_exclusive = { focus = victory_for_the_low_laburist	}
+		mutually_exclusive = { focus = victory_for_the_low_labour	}
 		mutually_exclusive = { focus = the_revolution_has_failed	}
  
 		cancel_if_invalid = yes
@@ -161,14 +161,18 @@
 				long_name = BRT_communism_hlab_party_long
 				name = BRT_communism_hlab_party
 			}
+			set_country_leader = BRT_oswald_mosley
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	
+
+
+
 	focus = {
-		id = victory_for_the_low_laburist
+		id = victory_for_the_low_labour
 		icon = GFX_goal_financial_situation
 		x = 13
 		y = 4
@@ -181,7 +185,7 @@
 		
 		cost = 1
 		prerequisite = { focus = crisis_in_the_commissariat}
-		mutually_exclusive = { focus = triumph_for_the_high_laburist	}
+		mutually_exclusive = { focus = triumph_for_the_high_labour	}
 		mutually_exclusive = { focus = the_revolution_has_failed	}
  
  
@@ -201,6 +205,9 @@
 		}
 	}
 	
+
+
+
 	focus = {
 		id = the_revolution_has_failed
 		icon = GFX_goal_financial_situation
@@ -216,8 +223,8 @@
 		
 		cost = 1
 		prerequisite = { focus = crisis_in_the_commissariat}
-		mutually_exclusive = { focus = triumph_for_the_high_laburist	}
-		mutually_exclusive = { focus = victory_for_the_low_laburist	}
+		mutually_exclusive = { focus = triumph_for_the_high_labour	}
+		mutually_exclusive = { focus = victory_for_the_low_labour	}
  
  
 		cancel_if_invalid = yes
