@@ -51,6 +51,7 @@ characters={
 			}
 			traits  = {
 				staunch_stalinist 
+				veteran_communist
 			}
 			ai_will_do  = {
 				factor  = 1.000

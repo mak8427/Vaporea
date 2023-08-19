@@ -215,7 +215,7 @@
 
 	focus = {
 		id = the_revolution_has_failed
-		icon = GFX_goal_financial_situation
+		icon = GFX_focus_BRT_the_revolution_has_failed
 		x = 10
 		y = 4
 		#relative_position_id = the_imperial_past
@@ -240,6 +240,7 @@
 			country_event = {
 				id = britain.labour.5
 			}
+			add_ideas = the_union_fall_in_the_chaos
 		}
 		ai_will_do = {
 			factor = 1
@@ -267,10 +268,10 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event = {
-				id = britain.labour.1
-			}
 			clear_global_event_target = roses_win
+			set_political_party = fascism_ideology
+			
+			# https://en.wikipedia.org/wiki/Mary_Morgan-Grenville,_11th_Lady_Kinloss
 		}
 		ai_will_do = {
 			factor = 1
