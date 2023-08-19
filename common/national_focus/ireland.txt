@@ -157,9 +157,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event = {
-				id = ireland.3
-			}
+			add_opinion_modifier = { target = BRT modifier = large_decrease }
+
 		}
 		ai_will_do = {
 			factor = 1
