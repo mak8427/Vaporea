@@ -120,6 +120,7 @@ country_event = {
 		save_global_event_target_as = IRE_bri_did_nothing
 
 	}
+}
 	country_event = {
 		id = ireland.7
 		title = "Stabilise the political situation"
@@ -129,19 +130,23 @@ country_event = {
 		is_triggered_only = yes
 		
 		option = {
-			name = "Send the Army to restore order!"
-			ai_chance = { factor = 10 } 
-			119={ add_compliance = -20 }
-			save_global_event_target_as = IRE_bri_sent_the_army
+			name = "We need to allign with the British politics"
+			add_popularity = { ideology = communism popularity = 0.10 }
+			add_stability = -0.05
+			ai_chance = { factor = 30 } 
+
 	
 	
 		}
 		option = {
-			name = "let them be, they will come to their senses"
-			ai_chance = { factor = 90 }
-			119={ add_resistance = 30 }
+			name = "We need to bring back the English royal family"
+			ai_chance = { factor = 30 }
 			add_stability = -0.1
-			save_global_event_target_as = IRE_bri_did_nothing
-	
+		}
+		option = {
+			name = "the democracy is not negotiable"
+			ai_chance = { factor = 30 }
+			add_stability = 0.05
+			add_popularity = { ideology = democracy popularity = 0.10 }
 		}
 }
