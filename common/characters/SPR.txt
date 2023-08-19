@@ -1,0 +1,8 @@
+characters = {
+	SPR_alfonso_bourbon={
+		name=SPR_alfonso_bourbon
+		portraits={
+				large=GFX_portrait_SPR_alfonso_bourbon
+		}
+	}
+}
