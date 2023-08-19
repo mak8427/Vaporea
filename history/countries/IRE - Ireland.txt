@@ -13,7 +13,11 @@ set_technology = {
 
 add_ideas = {rural_economy}
 
+add_opinion_modifier = {
+	target = BRT
+	modifier = decrease
 
+}
 set_convoys = 10
 
 recruit_character = IRE_Éamon_de_valera
