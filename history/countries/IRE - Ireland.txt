@@ -15,7 +15,7 @@ add_ideas = {rural_economy}
 
 add_opinion_modifier = {
 	target = BRT
-	modifier = decrease
+	modifier = medium_decrease
 
 }
 set_convoys = 10
