@@ -88,7 +88,7 @@ recruit_character = IRE_sean_ceallaigh
 create_country_leader = {
 	name = "Éamon de Valera"
 	desc = ""
-	picture = "Éamon_de_Valera.dds"
+	picture = "Valera.dds"
 	ideology = liberalism
 	traits = {
 		
@@ -108,7 +108,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "William Norton"
 	desc = ""
-	picture = "William_Norton.dds"
+	picture = "Norton.dds"
 	ideology = stalinism
 	traits = {
 		
