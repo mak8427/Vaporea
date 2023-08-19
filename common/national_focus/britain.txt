@@ -254,7 +254,8 @@
 		y = 0
 		#relative_position_id = AST_empower_the_workers
 		
-		available = { has_event_target = roses_win
+		available = { 
+			#has_event_target = roses_win
 		}
 		bypass = {
 		}
@@ -267,12 +268,16 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		# https://en.wikipedia.org/wiki/Mary_Morgan-Grenville,_11th_Lady_Kinloss
+
 		completion_reward = {
 			clear_global_event_target = roses_win
-			set_political_party = fascism_ideology
-			
-			# https://en.wikipedia.org/wiki/Mary_Morgan-Grenville,_11th_Lady_Kinloss
+			set_politics = {
+				ruling_party = fascism
+			}
 		}
+		
+
 		ai_will_do = {
 			factor = 1
 		}
