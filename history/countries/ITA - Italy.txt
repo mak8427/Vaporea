@@ -92,7 +92,7 @@ set_popularities = {
 create_country_leader = {
 	name = "Grammar Stalin"
 	desc = ""
-	picture = "Grammar.dds"
+	picture = "malaguzi2.dds"
 	ideology = socialism
 	traits = {
 		dictator
