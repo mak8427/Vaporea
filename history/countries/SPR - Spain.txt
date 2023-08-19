@@ -162,6 +162,7 @@ recruit_character = SPA_ramon_serrano_suner
 recruit_character = SPA_luis_hernando_de_larramendi
 recruit_character = SPA_martin_de_riquer
 recruit_character = SPA_mauricio_de_sivatte
+recruit_character = SPR_alfonso_bourbon
 
 set_technology = {
 	infantry_weapons = 1
