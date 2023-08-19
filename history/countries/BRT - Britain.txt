@@ -95,7 +95,7 @@ set_popularities = {
 
 create_country_leader = {
 	name = "Labour Council"
-	desc = labour_council.d
+	desc = BRT_labour_council.d
 	picture = "BRT_Labour_council.dds"
 	ideology = stalinism
 	traits = {
