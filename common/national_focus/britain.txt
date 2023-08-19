@@ -161,12 +161,21 @@
 				long_name = BRT_communism_hlab_party_long
 				name = BRT_communism_hlab_party
 			}
+			set_country_leader_name = {
+				name = "Oswald Mosley"
+			}
+			set_country_leader_portrait = {
+				portrait = "Osvald_Mosley.dds"
+			}
 		}
 		ai_will_do = {
 			factor = 1
 		}
 	}
 	
+
+
+
 	focus = {
 		id = victory_for_the_low_laburist
 		icon = GFX_goal_financial_situation
@@ -201,6 +210,9 @@
 		}
 	}
 	
+
+
+
 	focus = {
 		id = the_revolution_has_failed
 		icon = GFX_goal_financial_situation

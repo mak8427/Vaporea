@@ -90,12 +90,12 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Makkeroni Russovsky"
-	desc = ""
-	picture = "Grammar.dds"
+	name = "Labour Council"
+	desc = labour_council.d
+	picture = "BRT_Labour_council.dds"
 	ideology = stalinism
 	traits = {
-		dictator
+		cabinet_crisis
 	}
 }
 
