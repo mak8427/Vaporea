@@ -425,5 +425,65 @@ focus_tree = {
 			factor = 0.7
 		}
 	}
+	focus = {
+		id =  IRE_invite_research_institutions
+		icon = GFX_focus_generic_industry_1
+		x = 4
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_british_accepted_us }
+		completion_reward = {
+			research_speed_factor = 0.1
+			license_production_speed = 0.2
+		}
+		
+
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+		focus = {
+		id =  IRE_shared_military_training
+		icon = GFX_focus_generic_industry_1
+		x = 3
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_british_accepted_us }
+		completion_reward = {
+			experience_gain_army = 0.2
+			experience_gain_army_unit = 0.1
+		}
+		
+
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
 
 }
