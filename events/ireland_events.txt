@@ -90,7 +90,7 @@ country_event = {
 		add_popularity = { ideology = fascism popularity = 0.10 }
 	}
 	option = {
-		name = "The is no need to polarize the situation"
+		name = "There is no need to polarize the situation"
 		ai_chance = { factor = 10 }
 		add_war_support = 0.05
 		add_popularity = { ideology = fascism popularity = -0.10 }
@@ -204,7 +204,7 @@ country_event = {
 country_event = {
 	id = ireland.9
 	title = "They Reacted!"
-	desc = ireland.8.d
+	desc = ireland.9.d
 	picture = GFX_berlusca_caramba_event_image
 	
 	is_triggered_only = yes
@@ -255,7 +255,7 @@ country_event = {
 country_event = {
 	id = ireland.10
 	title = "Clashes in northen Ireland"
-	desc = ireland.8.d
+	desc = ireland.10.d
 	picture = GFX_berlusca_caramba_event_image
 	
 	is_triggered_only = yes
