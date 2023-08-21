@@ -49,8 +49,49 @@ ideas = {
 			}
 
 		}
+		the_seed_of_industrialisation_3c1 ={
+			picture=usa_great_depression_3
 
+			allowed_civil_war={
+				always = yes
+			}
+			available ={
+				has_war = no
+			}
+			modifier={
+				production_speed_buildings_factor = 0.20
+				consumer_goods_factor = -0.05
+			}
+		}
+		the_seed_of_industrialisation_3c2 ={
+			picture=usa_great_depression_3
 
+			allowed_civil_war={
+				always = yes
+			}
+			available ={
+				has_war = no
+			}
+			modifier={
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.1
+			}
+		}
+		the_seed_of_industrialisation_3c3 ={
+			picture=usa_great_depression_3
+
+			allowed_civil_war={
+				always = yes
+			}
+			available ={
+				has_war = no
+			}
+			modifier={
+				production_speed_buildings_factor = 0.10
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
 
 	}
 }
