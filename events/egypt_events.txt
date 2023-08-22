@@ -1,0 +1,26 @@
+###########################
+# Egyptian Events
+###########################
+
+add_namespace = egyptian
+
+country_event = {
+	id = egyptian.1
+	title = "A message from the Lord Protector"
+	desc = egyptian.1.d
+	picture = GFX_churchill_cigar_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Honey, pack your bags, we're going back home."
+		ai_chance = { factor = 1 }
+		BRT = {
+			add_ideas = king_george_VI_t
+		}
+	}
+	option = { 
+		name = "Winston, you've proven yourself as a Devil"
+		ai_chance = { factor = 99 }
+	}
+}

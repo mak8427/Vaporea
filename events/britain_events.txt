@@ -111,3 +111,178 @@ country_event = {
 		
 	}
 }
+
+country_event = {
+	id = britain.labour.6
+	title = "The focus of the Lord Protector"
+	desc = britain.labour.6.d
+	picture = GFX_churchill_cigar_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We must swiftly find a King!"
+		ai_chance = { factor = 50 }
+		add_ideas = searching_a_new_king
+	}
+	
+	option = {
+		name = "Better remove the remnants of that red mold!"
+		ai_chance = { factor = 50 }
+		save_global_event_target_as = king_win
+		add_ideas = dealing_with_the_red_mold
+	}
+}
+
+country_event = {
+	id = britain.labour.7
+	title = "A Monarch from the Roses"
+	desc = britain.labour.7.d
+	picture = GFX_churchill_cigar_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "Now that the documents are ready, let's proceed to action"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = britain.labour.8
+	title = "The Earl"
+	desc = britain.labour.8.d
+	picture = GFX_king_george_vi_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "A fine young lad, we'll have to squeeze him a tad."
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = britain.labour.9
+	title = "Lady Kinloss"
+	desc = britain.labour.9.d
+	picture = GFX_queen_mary_III_event_image
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "It wouldn't be too bad to live again under a new Queen"
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = britain.labour.10
+	title = "The final message"
+	desc = britain.labour.10.d
+	picture = GFX_king_edward_VIII_event_image
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "They are still our Royals, nonetheless."
+		ai_chance = { factor = 100 }
+		ENG={
+			country_event = {
+				id = egyptian.1
+			}
+		}
+	}
+
+	option = {
+		name = "Let them roast in Egypt; one day, we shall pay them a visit."
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = britain.labour.11
+	title = "The final choice"
+	desc = britain.labour.11.d
+	picture = GFX_churchill_cigar_event_image
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "... a sturdy King"
+		ai_chance = { factor = 60 }
+		add_ideas = king_george_VI_f
+	}
+
+	option = {
+		name = "... a good Queen"
+		ai_chance = { factor = 25 }
+		add_ideas = queen_mary_III
+	}
+
+	option = {
+		name = "... only a Lord Protector"
+		ai_chance = { factor = 15 }
+		remove_ideas = a_kingdom_needs_a_king
+	}
+}
+
+country_event = {
+	id = britain.labour.12
+	title = "Summon Montgomery!"
+	desc = britain.labour.12.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "We need an English Army, not a Labour one!"
+		ai_chance = { factor = 60 }
+		add_ideas = inspecting_the_army
+	}
+}
+
+country_event = {
+	id = britain.labour.13
+	title = "Summon Cunningham!"
+	desc = britain.labour.13.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "Rule Brittania, Brittania rules the wawes..."
+		ai_chance = { factor = 60 }
+		add_ideas = inspecting_the_navy
+	}
+}
+
+country_event = {
+	id = britain.labour.14
+	title = "Summon Dowding!"
+	desc = britain.labour.14.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "Fly my pretties..."
+		ai_chance = { factor = 60 }
+		add_ideas = inspecting_the_air
+	}
+}
+
+country_event = {
+	id = britain.labour.15
+	title = "... we strike them all!"
+	desc = britain.labour.14.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "Red like fire..."
+		ai_chance = { factor = 60 }
+		add_ideas = burning_the_red_government
+	}
+}

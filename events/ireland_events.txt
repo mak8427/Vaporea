@@ -147,7 +147,7 @@ country_event = {
 			name = "the democracy is not negotiable"
 			ai_chance = { factor = 30 }
 			add_stability = 0.05
-			add_popularity = { ideology = democracy popularity = 0.10 }
+			add_popularity = { ideology = democratic popularity = 0.10 }
 		}
 }
 country_event = {

@@ -42,7 +42,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #the_imperial_past
 	
 	focus = {
 		id = the_infamous_war
@@ -72,7 +72,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #the_infamous_war
 	
 	focus = {
 		id = the_third_english_revolution_war
@@ -102,9 +102,10 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
-		focus = {
-		id = crisis_in_the_commissariat
+	} #the_third_english_revolution_war
+		
+	focus = {
+		id = another_crisis_in_the_council
 		icon = GFX_goal_financial_situation
 		x = 10
 		y = 3
@@ -131,7 +132,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #another_crisis_in_the_council
 	
 	focus = {
 		id = triumph_for_the_high_labour
@@ -168,11 +169,8 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #triumph_for_the_high_labour
 	
-
-
-
 	focus = {
 		id = victory_for_the_low_labour
 		icon = GFX_goal_financial_situation
@@ -186,7 +184,7 @@
 		}
 		
 		cost = 1
-		prerequisite = { focus = crisis_in_the_commissariat}
+		prerequisite = { focus = crisis_in_the_commissariat }
 		mutually_exclusive = { focus = triumph_for_the_high_labour	}
 		mutually_exclusive = { focus = the_revolution_has_failed	}
  
@@ -208,11 +206,8 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #victory_for_the_low_labour
 	
-
-
-
 	focus = {
 		id = the_revolution_has_failed
 		icon = GFX_focus_BRT_the_revolution_has_failed
@@ -245,14 +240,14 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #the_revolution_has_failed
 	
 	focus = {
 		id = the_rebirth_of_the_roses
 		icon = GFX_focus_eng_imperial_federation
 		x = 20
 		y = 0
-		#relative_position_id = AST_empower_the_workers
+		#relative_position_id = the_rebirth_of_the_roses
 		
 		available = { 
 			#has_event_target = roses_win
@@ -275,14 +270,413 @@
 			set_politics = {
 				ruling_party = fascism
 			}
+			add_ideas = a_kingdom_needs_a_king
 		}
 		
 
 		ai_will_do = {
 			factor = 1
 		}
+	} #the_rebirth_of_the_roses
+
+	focus = {
+		id = the_focus_of_the_lord_protector
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = the_rebirth_of_the_roses
+		
+		available = { 
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_rebirth_of_the_roses }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		# https://en.wikipedia.org/wiki/Mary_Morgan-Grenville,_11th_Lady_Kinloss
+		# https://en.wikipedia.org/wiki/George_Child_Villiers,_9th_Earl_of_Jersey
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.6
+			}
+						
+		}
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	} #the_focus_of_the_lord_protector
+
+	focus = {
+		id = a_dusty_research
+		icon = GFX_focus_eng_imperial_federation
+		x = -1
+		y = 1
+		relative_position_id = the_focus_of_the_lord_protector
+		
+		available = { has_idea = searching_a_new_king
+		}
+		bypass = { 
+			OR = {
+				has_idea = queen_mary_III
+				has_idea = king_edward_VIII
+				has_idea = king_george_VI_f
+				NOT = {
+					has_idea = a_kingdom_needs_a_king
+				}
+			}
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_focus_of_the_lord_protector }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		# https://en.wikipedia.org/wiki/Mary_Morgan-Grenville,_11th_Lady_Kinloss
+		# https://en.wikipedia.org/wiki/George_Child_Villiers,_9th_Earl_of_Jersey
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.7
+			}
+			
+		}
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	} #a_dusty_research
+
+	focus = {
+		id = invite_them_secretly
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = a_dusty_research
+		
+		available = { 
+			has_idea = searching_a_new_king
+		}
+		bypass = { OR = {
+			has_idea = queen_mary_III
+			has_idea = king_edward_VIII
+			has_idea = king_george_VI_f
+			NOT = {
+				has_idea = a_kingdom_needs_a_king
+				}
+			}
+		}
+		
+		cost = 1
+		prerequisite = { focus = a_dusty_research }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.8
+			}
+			country_event = {
+				id = britain.labour.9
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} #invite_them_secretly
+
+	focus = {
+		id = send_a_final_message
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = invite_them_secretly
+		
+		available = { 
+			has_idea = searching_a_new_king
+		}
+		bypass = { OR = {
+			has_idea = queen_mary_III
+			has_idea = king_edward_VIII
+			has_idea = king_george_VI_f
+			NOT = {
+				has_idea = a_kingdom_needs_a_king
+				}
+			}
+		}
+		
+		cost = 1
+		prerequisite = { focus = invite_them_secretly }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.10
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} #send_a_final_message
+
+	focus = {
+		id = the_choice_of_the_lord_protector
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = send_a_final_message
+		
+		available = { 
+			has_idea = searching_a_new_king
+		}
+		bypass = { OR = {
+			has_idea = queen_mary_III
+			has_idea = king_edward_VIII
+			has_idea = king_george_VI_f
+			NOT = {
+				has_idea = a_kingdom_needs_a_king
+				}
+			}
+		}
+		
+		cost = 1
+		prerequisite = { focus = send_a_final_message }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.11
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} #the_choice_of_the_lord_protector
+
+	focus = {
+		id = a_lavish_ceremony
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = the_choice_of_the_lord_protector
+		
+		available = { 
+			has_idea = searching_a_new_king
+			OR = {
+				has_idea = queen_mary_III
+				has_idea = king_edward_VIII
+				has_idea = king_george_VI_f
+				NOT = {
+					has_idea = a_kingdom_needs_a_king
+					}
+				}
+		}
+		bypass = { 
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_choice_of_the_lord_protector }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = searching_a_new_king
+			add_ideas = dealing_with_the_red_mold
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} #a_lavish_ceremony
+
+	focus = {
+		id = summon_montgomery!
+		icon = GFX_focus_eng_imperial_federation
+		x = 1
+		y = 1
+		relative_position_id = the_focus_of_the_lord_protector
+		
+		available = { has_idea = dealing_with_the_red_mold
+		}
+		bypass = { 
+			
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_focus_of_the_lord_protector }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		# https://en.wikipedia.org/wiki/Mary_Morgan-Grenville,_11th_Lady_Kinloss
+		# https://en.wikipedia.org/wiki/George_Child_Villiers,_9th_Earl_of_Jersey
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.12
+			}
+			
+		}
+		
+
+		ai_will_do = {
+			factor = 1
+		}
+	} #summon_montgomery!
+
+	focus = {
+		id = summon_cunningham!
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = summon_montgomery!
+		
+		available = { 
+			has_idea = dealing_with_the_red_mold
+		}
+		bypass = { }
+		
+		cost = 1
+		prerequisite = { focus = summon_montgomery! }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.13
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} #summon_cunningham!
+
+	focus = {
+		id = summon_dowding!
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = summon_cunningham!
+		
+		available = { 
+			has_idea = dealing_with_the_red_mold
+		}
+		bypass = { 	}
+		
+		cost = 1
+		prerequisite = { focus = summon_cunningham! }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.14
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} #summon_dowding!
+
+	focus = {
+		id = and_now...
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = summon_dowding!
+		
+		available = { 
+			has_idea = dealing_with_the_red_mold
+		}
+		bypass = { 
+		}
+		
+		cost = 1
+		prerequisite = { focus = summon_dowding! }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = {
+				id = britain.labour.15
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	} #and_now...
+
+	focus = {
+		id = a_new_country
+		icon = GFX_focus_eng_imperial_federation
+		x = 0
+		y = 1
+		relative_position_id = and_now...
+		
+		available = { 
+			has_idea = dealing_with_the_red_mold
+		}
+		bypass = { 
+		}
+		
+		cost = 1
+		prerequisite = { focus = and_now... }
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = dealing_with_the_red_mold
+			remove_ideas = inspecting_the_army
+			remove_ideas = inspecting_the_navy
+			remove_ideas = inspecting_the_air
+			remove_ideas = burning_the_red_government
+ 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
 	}
-	
+
 	focus = {
 		id = the_return_of_the_king
 		icon = GFX_focus_eng_imperial_federation

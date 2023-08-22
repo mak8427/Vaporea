@@ -42,5 +42,60 @@ ideas = {
 				add_stability = -0.2
 			}
 		}
+
+		queen_mary_III={
+			picture = idea_BRT_queen_mary_III
+		}
+
+		king_george_VI_f={
+			picture = idea_BRT_king_george_VI_f
+		}
+
+		king_george_VI_t={
+			picture = idea_BRT_king_george_VI_t
+		}
+
+		king_edward_VIII={
+			picture = idea_BRT_king_edward_VIII
+		}
+
+		searching_a_new_king={
+			picture = idea_generic_monarchist_uprising
+			
+			modifier = {
+				political_power_cost = 2
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		dealing_with_the_red_mold={
+			picture = idea_idea_generic_communist_army
+			
+			modifier = {
+				political_power_cost = 2
+				recruitable_population_factor = -0.04
+			}
+		}
+
+		a_kingdom_needs_a_king={
+			picture = idea_generic_monarchist_uprising
+			
+			modifier = {
+				political_power_cost = 2
+				consumer_goods_factor = 0.05
+			}
+		}
+
+		burning_the_red_government={
+			picture = idea_BRT_union_fall_in_chaos
+			
+			modifier = {
+				political_power_cost = 2
+				stability_factor = -0.3
+			}
+		}
+
+
+
 	}
 }
