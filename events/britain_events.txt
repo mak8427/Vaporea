@@ -275,7 +275,7 @@ country_event = {
 country_event = {
 	id = britain.labour.15
 	title = "... we strike them all!"
-	desc = britain.labour.14.d
+	desc = britain.labour.15.d
 	picture = GFX_berlusca_caramba_event_image
 	
 	is_triggered_only = yes
@@ -284,5 +284,32 @@ country_event = {
 		name = "Red like fire..."
 		ai_chance = { factor = 60 }
 		add_ideas = burning_the_red_government
+	}
+}
+
+country_event = {
+	id = britain.labour.16
+	title = "A councilour approach the King"
+	desc = britain.labour.16.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+		
+	option = {
+		name = "Burn the Magna Carta"
+		ai_chance = { factor = 60 }
+		add_ideas = burning_the_magna_carta
+		set_politics = {
+			ruling_party = neutrality
+		}
+	}
+
+	option = {
+		name = "Are you perhaps talking about treason?"
+		ai_chance = { factor = 60 }
+		add_ideas = organize_a_true_election
+		set_politics = {
+			ruling_party = democracy
+		}
 	}
 }

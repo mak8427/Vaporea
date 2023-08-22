@@ -4,4 +4,9 @@ spriteTypes = {
 		name = "GFX_berlusca_caramba_event_image"
 		texturefile = "gfx/event_pictures/berlusca_caramba.dds"
 	}
+
+	spriteType = {
+		name = "GFX_churchill_cigar_event_image"
+		texturefile = "gfx/event_pictures/churchill_cigar.dds"
+	}
 }

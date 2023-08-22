@@ -147,7 +147,7 @@
 		}
 		
 		cost = 1
-		prerequisite = { focus = crisis_in_the_commissariat
+		prerequisite = { focus = another_crisis_in_the_council
 		}
 		mutually_exclusive = { focus = victory_for_the_low_labour	}
 		mutually_exclusive = { focus = the_revolution_has_failed	}
@@ -184,7 +184,7 @@
 		}
 		
 		cost = 1
-		prerequisite = { focus = crisis_in_the_commissariat }
+		prerequisite = { focus = another_crisis_in_the_council }
 		mutually_exclusive = { focus = triumph_for_the_high_labour	}
 		mutually_exclusive = { focus = the_revolution_has_failed	}
  
@@ -222,7 +222,7 @@
 		}
 		
 		cost = 1
-		prerequisite = { focus = crisis_in_the_commissariat}
+		prerequisite = { focus = another_crisis_in_the_council	}
 		mutually_exclusive = { focus = triumph_for_the_high_labour	}
 		mutually_exclusive = { focus = victory_for_the_low_labour	}
  
@@ -250,7 +250,7 @@
 		#relative_position_id = the_rebirth_of_the_roses
 		
 		available = { 
-			#has_event_target = roses_win
+			has_event_target = roses_win
 		}
 		bypass = {
 		}
@@ -507,6 +507,14 @@
 		completion_reward = {
 			remove_ideas = searching_a_new_king
 			add_ideas = dealing_with_the_red_mold
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -515,7 +523,7 @@
 	} #a_lavish_ceremony
 
 	focus = {
-		id = summon_montgomery!
+		id = summon_montgomery
 		icon = GFX_focus_eng_imperial_federation
 		x = 1
 		y = 1
@@ -541,6 +549,14 @@
 			country_event = {
 				id = britain.labour.12
 			}
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 			
 		}
 		
@@ -551,11 +567,11 @@
 	} #summon_montgomery!
 
 	focus = {
-		id = summon_cunningham!
+		id = summon_cunningham
 		icon = GFX_focus_eng_imperial_federation
 		x = 0
 		y = 1
-		relative_position_id = summon_montgomery!
+		relative_position_id = summon_montgomery
 		
 		available = { 
 			has_idea = dealing_with_the_red_mold
@@ -563,7 +579,7 @@
 		bypass = { }
 		
 		cost = 1
-		prerequisite = { focus = summon_montgomery! }
+		prerequisite = { focus = summon_montgomery }
   
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -573,7 +589,14 @@
 			country_event = {
 				id = britain.labour.13
 			}
-			
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -582,11 +605,11 @@
 	} #summon_cunningham!
 
 	focus = {
-		id = summon_dowding!
+		id = summon_dowding
 		icon = GFX_focus_eng_imperial_federation
 		x = 0
 		y = 1
-		relative_position_id = summon_cunningham!
+		relative_position_id = summon_cunningham
 		
 		available = { 
 			has_idea = dealing_with_the_red_mold
@@ -594,7 +617,7 @@
 		bypass = { 	}
 		
 		cost = 1
-		prerequisite = { focus = summon_cunningham! }
+		prerequisite = { focus = summon_cunningham }
   
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -604,7 +627,14 @@
 			country_event = {
 				id = britain.labour.14
 			}
-			
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -617,7 +647,7 @@
 		icon = GFX_focus_eng_imperial_federation
 		x = 0
 		y = 1
-		relative_position_id = summon_dowding!
+		relative_position_id = summon_dowding
 		
 		available = { 
 			has_idea = dealing_with_the_red_mold
@@ -626,7 +656,7 @@
 		}
 		
 		cost = 1
-		prerequisite = { focus = summon_dowding! }
+		prerequisite = { focus = summon_dowding }
   
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -636,7 +666,14 @@
 			country_event = {
 				id = britain.labour.15
 			}
-			
+			add_popularity = {
+				ideology = communism
+				popularity = -0.1
+			}
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
 		}
 		
 		ai_will_do = {
@@ -670,6 +707,61 @@
 			remove_ideas = inspecting_the_navy
 			remove_ideas = inspecting_the_air
 			remove_ideas = burning_the_red_government
+			add_ideas = searching_a_new_king
+ 		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = a_glorious_future
+		icon = GFX_focus_eng_imperial_federation
+		x = -1
+		y = 1
+		relative_position_id = a_new_country
+		
+		available = { 
+			
+		}
+		bypass = { 
+		}
+		
+		cost = 1
+		prerequisite = { focus = a_lavish_ceremony }
+		prerequisite = { focus = a_new_country }
+		
+  
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				OR = {
+					has_idea = king_george_VI_f
+					has_idea = king_mary_III
+				}
+				set_cosmetic_tag = BRT_EKD_fascism
+			}
+			else_if = {
+				if = {
+					has_idea = king_edward_VIII
+					set_cosmetic_tag = BRT_UKD_fascism
+				}
+				else_if = {
+					NOT = {
+						OR = {
+							has_idea = king_george_VI_f
+							has_idea = king_mary_III
+							has_idea = king_edward_VIII
+						}
+					}
+					set_cosmetic_tag = BRT_COM_fascism
+				}
+
+			}
  		}
 		
 		ai_will_do = {
@@ -699,9 +791,65 @@
 
 		completion_reward = {
 			country_event = {
-				id = britain.labour.1
+				id = britain.labour.16
 			}
 			clear_global_event_target = king_win
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = the_king_party
+		icon = GFX_focus_eng_imperial_federation
+		x = -1
+		y = 1
+		relative_position_id = the_return_of_the_king
+		
+		available = { has_government = neutrality
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_return_of_the_king }
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	focus = {
+		id = abolish_the_electoral_reform
+		icon = GFX_focus_eng_imperial_federation
+		x = 1
+		y = 1
+		relative_position_id = the_return_of_the_king
+		
+		available = { has_government = democratic
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus = the_return_of_the_king}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
 		}
 		ai_will_do = {
 			factor = 1
