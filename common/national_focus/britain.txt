@@ -508,12 +508,8 @@
 			remove_ideas = searching_a_new_king
 			add_ideas = dealing_with_the_red_mold
 			add_popularity = {
-				ideology = communism
-				popularity = -0.1
-			}
-			add_popularity = {
 				ideology = fascism
-				popularity = 0.1
+				popularity = 0.15
 			}
 		}
 		
@@ -552,12 +548,7 @@
 			add_popularity = {
 				ideology = communism
 				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
-			
+			}		
 		}
 		
 
@@ -593,10 +584,6 @@
 				ideology = communism
 				popularity = -0.1
 			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
 		}
 		
 		ai_will_do = {
@@ -630,10 +617,6 @@
 			add_popularity = {
 				ideology = communism
 				popularity = -0.1
-			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
 			}
 		}
 		
@@ -670,10 +653,6 @@
 				ideology = communism
 				popularity = -0.1
 			}
-			add_popularity = {
-				ideology = fascism
-				popularity = 0.1
-			}
 		}
 		
 		ai_will_do = {
@@ -708,12 +687,16 @@
 			remove_ideas = inspecting_the_air
 			remove_ideas = burning_the_red_government
 			add_ideas = searching_a_new_king
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.1
+			}
  		}
 		
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #a_new_country
 
 	focus = {
 		id = a_glorious_future
@@ -722,52 +705,44 @@
 		y = 1
 		relative_position_id = a_new_country
 		
-		available = { 
-			
-		}
-		bypass = { 
-		}
+		available = { 	}
+		bypass = { 	}
 		
 		cost = 1
 		prerequisite = { focus = a_lavish_ceremony }
 		prerequisite = { focus = a_new_country }
 		
-  
-		cancel_if_invalid = yes
+  		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		completion_reward = {
 			if = {
-				OR = {
-					has_idea = king_george_VI_f
-					has_idea = king_mary_III
+				limit = {
+					OR = {
+						has_idea = king_george_VI_f
+						has_idea = queen_mary_III
+					}
 				}
 				set_cosmetic_tag = BRT_EKD_fascism
+				add_ideas = the_scottish_problem
+				add_ideas = the_welsh_problem
 			}
 			else_if = {
-				if = {
+				limit = {
 					has_idea = king_edward_VIII
-					set_cosmetic_tag = BRT_UKD_fascism
 				}
-				else_if = {
-					NOT = {
-						OR = {
-							has_idea = king_george_VI_f
-							has_idea = king_mary_III
-							has_idea = king_edward_VIII
-						}
-					}
-					set_cosmetic_tag = BRT_COM_fascism
-				}
-
+				set_cosmetic_tag = BRT_UKD_fascism
+			}
+			else = {
+				set_cosmetic_tag = BRT_COM_fascism
 			}
  		}
 		
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #a_glorious_future
 
 	focus = {
 		id = the_return_of_the_king
@@ -798,7 +773,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #the_return_of_the_king
 
 	focus = {
 		id = the_king_party
@@ -826,7 +801,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
+	} #the_king_party
 
 	focus = {
 		id = abolish_the_electoral_reform
@@ -854,6 +829,5 @@
 		ai_will_do = {
 			factor = 1
 		}
-	}
-	
-}		
+	} #abolish_the_electoral_reform
+}

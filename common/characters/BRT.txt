@@ -67,7 +67,7 @@ characters={
 	}
 
 	BRT_winston_churchill={
-		name= "Winston_Churchill"
+		name= "Winston Churchill"
 		portraits={
 			civilian={
 				large= "gfx/leaders/BRT/Winston_Churchill.dds"
@@ -103,7 +103,7 @@ characters={
 		}
 
 		country_leader={
-			ideology=conservatism
+			ideology=fascism_ideology
 			traits = {
 				british_bulldog
 			}

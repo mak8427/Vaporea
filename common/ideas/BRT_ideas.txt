@@ -3,12 +3,6 @@ ideas = {
 		economy_in_disarray={
 			picture=usa_great_depression_3
 
-			allowed_civil_war={
-				always = yes
-			}
-			available ={
-				has_war = no
-			}
 			modifier={
 				consumer_goods_factor =0.3
 				local_resources_factor = -0.2
@@ -20,12 +14,6 @@ ideas = {
 		the_great_reconstruction={
 			picture=usa_great_depression_3
 
-			allowed_civil_war={
-				always = yes
-			}
-			available ={
-				has_war = no
-			}
 			modifier={
 				consumer_goods_factor =0.3
 				local_resources_factor = -0.2
@@ -95,7 +83,13 @@ ideas = {
 			}
 		}
 
+		the_scottish_problem = {
+			picture = idea_generic_monarchist_uprising
+		}
 
+		the_welsh_problem = {
+			picture = idea_generic_monarchist_uprising
+		}
 
 	}
 }

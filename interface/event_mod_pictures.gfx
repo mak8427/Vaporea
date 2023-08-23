@@ -9,4 +9,22 @@ spriteTypes = {
 		name = "GFX_churchill_cigar_event_image"
 		texturefile = "gfx/event_pictures/churchill_cigar.dds"
 	}
+
+	spriteType = {
+		name = "GFX_king_george_vi_event_image"
+		texturefile = "gfx\event_pictures\king_george_VI_f.dds"
+	}
+
+	spriteType = {
+		name = "GFX_queen_mary_III_event_image"
+		texturefile = "gfx/event_pictures/queen_mary_III.dds"
+	}
+
+	spriteType = {
+		name = "GFX_king_edward_VIII_event_image"
+		texturefile = "gfx/event_pictures/king_edward_VIII.dds"
+	}
+
+	
+
 }

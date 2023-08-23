@@ -30,6 +30,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/IRE_rising_nation.dds"			
 	}
 
+	SpriteType = {
+		name = "GFX_focus_BRT_the_revolution_has_failed"
+		textureFile ="gfx/interface/goals/focus_BRT_the_revolution_has_failed.dds"
+	}
+
 
 
 

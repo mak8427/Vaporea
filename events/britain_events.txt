@@ -209,19 +209,19 @@ country_event = {
 	is_triggered_only = yes
 		
 	option = {
-		name = "... a sturdy King"
+		name = "... needs a sturdy King."
 		ai_chance = { factor = 60 }
 		add_ideas = king_george_VI_f
 	}
 
 	option = {
-		name = "... a good Queen"
+		name = "... needs a good Queen"
 		ai_chance = { factor = 25 }
 		add_ideas = queen_mary_III
 	}
 
 	option = {
-		name = "... only a Lord Protector"
+		name = "... only needs a Lord Protector"
 		ai_chance = { factor = 15 }
 		remove_ideas = a_kingdom_needs_a_king
 	}
@@ -309,7 +309,7 @@ country_event = {
 		ai_chance = { factor = 60 }
 		add_ideas = organize_a_true_election
 		set_politics = {
-			ruling_party = democracy
+			ruling_party = democratic
 		}
 	}
 }
