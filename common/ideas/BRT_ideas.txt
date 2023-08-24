@@ -22,6 +22,56 @@ ideas = {
 				
 		}
 
+		the_council_sistem = {
+			picture = idea_BRT_the_council_sistem
+
+			modifier={
+				add_stability = -0.20
+				political_power_cost = 1
+			}
+				
+		}
+
+		the_council_sistem_2_h = {
+			picture = idea_BRT_the_council_sistem
+
+			modifier={
+				add_stability = -0.10
+				political_power_cost = 1
+			}
+				
+		}
+
+		the_council_sistem_2_l = {
+			picture = idea_BRT_the_council_sistem
+
+			modifier={
+				add_stability = -0.10
+				political_power_cost = 1
+			}
+				
+		}
+
+		the_council_sistem_3_h = {
+			picture = idea_BRT_the_council_sistem
+
+			modifier={
+				add_stability = 0.10
+				political_power_gain = 1
+			}
+				
+		}
+
+		the_council_sistem_3_l = {
+			picture = idea_BRT_the_council_sistem
+
+			modifier={
+				add_stability = 0.10
+				political_power_gain = 1
+			}
+				
+		}
+
 		the_union_fall_in_the_chaos={
 			picture=idea_BRT_union_fall_in_chaos
 
@@ -57,7 +107,7 @@ ideas = {
 		}
 
 		dealing_with_the_red_mold={
-			picture = idea_idea_generic_communist_army
+			picture = idea_generic_communist_army
 			
 			modifier = {
 				political_power_cost = 2
@@ -91,5 +141,12 @@ ideas = {
 			picture = idea_generic_monarchist_uprising
 		}
 
+		burning_the_magna_carta = {
+			picture = idea_generic_monarchist_uprising
+		}
+
+		organize_a_true_election = {
+			picture = idea_generic_monarchist_uprising
+		}
 	}
 }

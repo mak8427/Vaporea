@@ -8,6 +8,54 @@ spriteTypes = {
 		noOfFrames = 18
 	}
 
+	### Britain ideas icons
+
+	spriteType = {
+		name = "idea_BRT_the_council_sistem"
+		texturefile = "gfx/interface/ideas/idea_BRT_the_council_sistem.dds"
+	}
+
+	spriteType = {
+		name = "idea_BRT_union_fall_in_chaos"
+		texturefile = "gfx/interface/ideas/idea_BRT_union_fall_in_chaos.dds"
+	}
+
+	spriteType = {
+		name = "idea_BRT_queen_mary_III"
+		texturefile = "gfx/interface/ideas/idea_BRT_queen_mary_III.dds"
+	}
+
+	spriteType = {
+		name = "idea_BRT_king_george_VI_t"
+		texturefile = "gfx/interface/ideas/idea_BRT_king_george_VI_t.dds"
+	}
+
+	spriteType = {
+		name = "idea_BRT_king_edward_VIII"
+		texturefile = "gfx/interface/ideas/idea_BRT_king_edward_VIII.dds"
+	}
+
+	spriteType = {
+		name = "idea_generic_monarchist_uprising"
+		texturefile = "gfx/interface/ideas/idea_generic_monarchist_uprising.dds"
+	}
+
+	spriteType = {
+		name = "idea_BRT_king_george_VI_f"
+		texturefile = "gfx/interface/ideas/idea_BRT_king_george_VI_f.dds"
+	}
+
+	spriteType = {
+		name = "idea_generic_communist_army"
+		texturefile = "gfx/interface/ideas/idea_generic_communist_army.dds"
+	}
+
+	spriteType = {
+		name = "idea_BRT_union_fall_in_chaos"
+		texturefile = "gfx/interface/ideas/idea_BRT_union_fall_in_chaos.dds"
+	}
+
+
 	### new tfv nat spirit icons
 
 	spriteType = {

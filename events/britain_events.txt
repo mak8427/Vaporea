@@ -4,7 +4,7 @@
 
 add_namespace = britain.labour
 
-# A mak profuma l'alito di bacon
+# Numeri disponibili (4;)
 country_event = {
 	id = britain.labour.1
 	title = "The Imperial Past"
@@ -72,21 +72,6 @@ country_event = {
 		name = "And we will!"
 		ai_chance = { factor = 50 }
 		add_political_power = 150
-	}
-}
-
-country_event = {
-	id = britain.labour.4
-	title = "Crisis in the Commissariat"
-	desc = britain.labour.4.d
-	picture = GFX_berlusca_caramba_event_image
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = "Let's start organizing the polling stations!"
-		ai_chance = { factor = 100 }
-		#spawna il giornale con la notizia della chiamata alle urne brittanica
 	}
 }
 
@@ -251,7 +236,7 @@ country_event = {
 	is_triggered_only = yes
 		
 	option = {
-		name = "Rule Brittania, Brittania rules the wawes..."
+		name = "Rule Brittania, Brittania rules the waves..."
 		ai_chance = { factor = 60 }
 		add_ideas = inspecting_the_navy
 	}
@@ -313,3 +298,4 @@ country_event = {
 		}
 	}
 }
+

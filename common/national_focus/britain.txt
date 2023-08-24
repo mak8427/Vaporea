@@ -125,9 +125,7 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			country_event = {
-				id = britain.labour.4
-			}
+			add_stability = 0.1
 		}
 		ai_will_do = {
 			factor = 1
@@ -162,6 +160,7 @@
 				long_name = BRT_communism_hlab_party_long
 				name = BRT_communism_hlab_party
 			}
+			add_stability = 0.1
 			recruit_character = BRT_oswald_mosley
 			promote_character = BRT_oswald_mosley
 
@@ -208,6 +207,105 @@
 		}
 	} #victory_for_the_low_labour
 	
+	focus = {
+		id = change_the_council
+		icon = GFX_focus_BRT_the_revolution_has_failed
+		x = 0
+		y = 1
+		relative_position_id = the_revolution_has_failed
+		
+		available = { 					
+		}
+		
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { 
+			OR = { 
+				focus = triumph_for_the_high_labour
+				focus = victory_for_the_low_labour		
+			}
+		}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = BRT_oswald_mosley
+						ruling_only = yes
+					}
+				}
+				swap_ideas = {
+					remove_ideas = the_council_sistem
+					add_ideas = the_council_sistem_2_h
+				}
+				else = {
+					swap_ideas = {
+						remove_ideas = the_council_sistem
+						add_ideas = the_council_sistem_2_l
+					}
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	} #change_the_council
+
+	focus = {
+		id = a_new_council
+		icon = GFX_focus_BRT_the_revolution_has_failed
+		x = 0
+		y = 1
+		relative_position_id = change_the_council
+		
+		available = { 					
+		}
+		
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus = change_the_council	}
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_country_leader = {
+						character = BRT_oswald_mosley
+						ruling_only = yes
+					}
+				}
+				swap_ideas = {
+					remove_ideas = the_council_sistem_2_h
+					add_ideas = the_council_sistem_3_h
+				}
+				else = {
+					swap_ideas = {
+						remove_ideas = the_council_sistem_2_l
+						add_ideas = the_council_sistem_3_l
+					}
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	} #a_new_council
+
 	focus = {
 		id = the_revolution_has_failed
 		icon = GFX_focus_BRT_the_revolution_has_failed
@@ -796,7 +894,9 @@
 		available_if_capitulated = no
 
 		completion_reward = {
-			
+			country_event = {
+				id = britain.labour.17
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -830,4 +930,6 @@
 			factor = 1
 		}
 	} #abolish_the_electoral_reform
+
+
 }
