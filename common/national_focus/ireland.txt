@@ -615,24 +615,20 @@ focus_tree = {
 	#
 	#
 	focus = {
-		id =  IRE_military_development_fund
+		id =  IRE_incentivise_industrialisation
 		icon = GFX_focus_generic_industry_2
-		x = 8
-		y = 6
+		x = 28
+		y = 0
 		#relative_position_id = AST_empower_the_workers
 		
-		available = {}
+		available = { has_event_target = IRE_sell_land }
+		available = { }
 		bypass = {
 		}
 		
 		cost = 1
-		prerequisite = { focus=IRE_industrial_cooperation }
-		mutually_exclusive = { focus = IRE_invite_british_private_investors}
-		mutually_exclusive = { focus = IRE_nationalise_the_banks_and_railways}
 		completion_reward = {
-			swap_ideas = {
-			remove_idea = the_seed_of_industrialisation_2c
-			add_idea = the_seed_of_industrialisation_3c3
+
 			}
 
 		}
