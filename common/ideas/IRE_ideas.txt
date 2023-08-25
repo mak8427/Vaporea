@@ -163,6 +163,36 @@ ideas = {
 			}
 
 		}
+		industrial_concessions1_ ={
+			picture=usa_great_depression_3
+
+			allowed_civil_war={
+				always = yes
+			}
+			available ={
+				has_war = no
+			}
+			modifier={
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+				
+			}
+
+		}
+		industrial_concessions2_ ={
+			picture=usa_great_depression_3
+
+			allowed_civil_war={
+				always = yes
+			}
+			available ={
+				has_war = no
+			}
+			modifier={
+				production_speed_buildings_factor = 0.05				
+			}
+
+		}
 
 	}
 	

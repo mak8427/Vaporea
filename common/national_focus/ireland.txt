@@ -394,7 +394,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_industrial_cooperation
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_goal_industrial_cooperation
 		x = 6
 		y = 5
 		#relative_position_id = AST_empower_the_workers
@@ -426,7 +426,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_invite_research_institutions
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_invite_research_institutions
 		x = 2
 		y = 5
 		#relative_position_id = AST_empower_the_workers
@@ -459,7 +459,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_shared_military_training
-		icon = GFX_focus_generic_industry_1
+		icon = GFX_IRE_military_training
 		x =2
 		y = 6
 		#relative_position_id = AST_empower_the_workers
@@ -492,7 +492,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_invite_british_private_investors
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_IRE_british_investors
 		x = 4
 		y = 6
 		#relative_position_id = AST_empower_the_workers
@@ -524,7 +524,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_nationalise_the_banks_and_railways
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_IRE_nationalise_industry
 		x = 6
 		y = 6
 		#relative_position_id = AST_empower_the_workers
@@ -557,7 +557,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_military_development_fund
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_IRE_military_development
 		x = 8
 		y = 6
 		#relative_position_id = AST_empower_the_workers
@@ -586,7 +586,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_Initiate_land_reforms
-		icon = GFX_focus_generic_industry_2
+		icon = GFX_IRE_land_reform
 		x = 6
 		y = 7	
 		#relative_position_id = AST_empower_the_workers
@@ -628,8 +628,14 @@ focus_tree = {
 		
 		cost = 1
 		completion_reward = {
-
+			swap_ideas = {
+				remove_idea = rural_economy
+				add_idea = rural_economy1
 			}
+			country_event = {
+				id = ireland.12
+			}
+
 
 		}
 		cancel_if_invalid = yes

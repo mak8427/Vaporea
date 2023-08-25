@@ -2,8 +2,42 @@ spriteTypes = {
 
 	#### Generic continuous goal icons
 	SpriteType = {
+		name = "GFX_IRE_british_investors"
+		texturefile = "gfx/interface/goals/IRE_british_investors.dds"			
+		}
+		SpriteType = {
+			name = "GFX_IRE_nationalise_industry"
+			texturefile = "gfx/interface/goals/IRE_nationalise_industry.dds"			
+		}
+		SpriteType = {
+			name = "GFX_IRE_military_development"
+			texturefile = "gfx/interface/goals/IRE_military_development.dds"			
+		}
+		SpriteType = {
+			name = "GFX_IRE_land_reform"
+			texturefile = "gfx/interface/goals/IRE_land_reform.dds"			
+		}
+
+
+
+
+	SpriteType = {
 	name = "GFX_goal_financial_situation"
 	texturefile = "gfx/interface/goals/focus_BRT_financial_situation.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_industrial_cooperation"
+		texturefile = "gfx/interface/goals/IRE_industrial_cooperation.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_invite_research_institutions"
+		texturefile = "gfx/interface/goals/IRE_invite_research_institutions.dds"			
+	}
+
+	SpriteType = {
+		name = "GFX_IRE_military_training"
+		texturefile = "gfx/interface/goals/IRE_military_training.dds"			
 	}
 
 	SpriteType = {
