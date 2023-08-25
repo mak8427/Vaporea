@@ -221,15 +221,9 @@
 		}
 		
 		cost = 1
-		prerequisite = { 
-			OR = { 
-				focus = triumph_for_the_high_labour
-				focus = victory_for_the_low_labour		
-			}
-		}
+		prerequisite = { focus = triumph_for_the_high_labour focus = victory_for_the_low_labour	}
  
- 
-		cancel_if_invalid = yes
+ 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
