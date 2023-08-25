@@ -214,9 +214,6 @@ focus_tree = {
 			factor = 0.9
 		}
 	}
-
-
-
 	focus = {
 		id =  IRE_insurrections_in_northern_ireland
 		icon = GFX_focus_ETH_peacekeeping_forces
@@ -246,9 +243,9 @@ focus_tree = {
 			factor = 0.9
 		}
 	}
-
-
-
+	#
+	#
+	#
 	#
 	#
 	#RECONCILIATION WITH THE BRITISH
@@ -587,5 +584,66 @@ focus_tree = {
 			factor = 0.7
 		}
 	}
+	focus = {
+		id =  IRE_Initiate_land_reforms
+		icon = GFX_focus_generic_industry_2
+		x = 6
+		y = 7	
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_invite_british_private_investors focus = IRE_nationalise_the_banks_and_railways focus = IRE_military_development_fund}
+		completion_reward = {
+			country_event = {
+				id = ireland.11
+			}
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0.7
+		}
+	}
+	#
+	#
+	#lAND AND ECONOMY REFORMS
+	#
+	#
+	focus = {
+		id =  IRE_military_development_fund
+		icon = GFX_focus_generic_industry_2
+		x = 8
+		y = 6
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus=IRE_industrial_cooperation }
+		mutually_exclusive = { focus = IRE_invite_british_private_investors}
+		mutually_exclusive = { focus = IRE_nationalise_the_banks_and_railways}
+		completion_reward = {
+			swap_ideas = {
+			remove_idea = the_seed_of_industrialisation_2c
+			add_idea = the_seed_of_industrialisation_3c3
+			}
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0.1
+		}
+	}
+
+
 
 }
