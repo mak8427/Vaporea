@@ -320,6 +320,8 @@ focus_tree = {
 						modifier = medium_increase
 					}
 				}
+
+			add_ideas = { british_cooperation1 }
 		}
  
  
@@ -363,7 +365,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_consolidate_political_support
 		icon = GFX_focus_generic_court
-		x = 7
+		x = 10
 		y = 5
 		#relative_position_id = AST_empower_the_workers
 		
@@ -396,7 +398,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_industrial_cooperation
 		icon = GFX_focus_generic_industry_1
-		x = 5 
+		x = 6
 		y = 5
 		#relative_position_id = AST_empower_the_workers
 		
@@ -428,7 +430,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_invite_research_institutions
 		icon = GFX_focus_generic_industry_1
-		x = 4
+		x = 2
 		y = 5
 		#relative_position_id = AST_empower_the_workers
 		
@@ -439,8 +441,11 @@ focus_tree = {
 		cost = 1
 		prerequisite = { focus=IRE_british_accepted_us }
 		completion_reward = {
-			research_speed_factor = 0.1
-			license_production_speed = 0.2
+			swap_ideas = {
+				remove_idea = british_cooperation1
+				add_idea = british_cooperation2
+			}
+
 		}
 		
 
@@ -458,8 +463,8 @@ focus_tree = {
 	focus = {
 		id =  IRE_shared_military_training
 		icon = GFX_focus_generic_industry_1
-		x = 3
-		y = 5
+		x =2
+		y = 6
 		#relative_position_id = AST_empower_the_workers
 		
 		available = {}
@@ -467,10 +472,13 @@ focus_tree = {
 		}
 		
 		cost = 1
-		prerequisite = { focus=IRE_british_accepted_us }
+		prerequisite = { focus=IRE_invite_research_institutions }
 		completion_reward = {
-			experience_gain_army = 0.2
-			experience_gain_army_unit = 0.1
+			swap_ideas = {
+				remove_idea = british_cooperation2
+				add_idea = british_cooperation3
+			}
+
 		}
 		
 
@@ -488,7 +496,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_invite_british_private_investors
 		icon = GFX_focus_generic_industry_2
-		x = 5
+		x = 4
 		y = 6
 		#relative_position_id = AST_empower_the_workers
 		
@@ -520,7 +528,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_nationalise_the_banks_and_railways
 		icon = GFX_focus_generic_industry_2
-		x = 4
+		x = 6
 		y = 6
 		#relative_position_id = AST_empower_the_workers
 		
@@ -553,7 +561,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_military_development_fund
 		icon = GFX_focus_generic_industry_2
-		x = 6
+		x = 8
 		y = 6
 		#relative_position_id = AST_empower_the_workers
 		
