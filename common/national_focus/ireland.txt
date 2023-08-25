@@ -361,7 +361,7 @@ focus_tree = {
 	}
 	focus = {
 		id =  IRE_consolidate_political_support
-		icon = GFX_focus_generic_court
+		icon = GFX_IRE_political_support
 		x = 10
 		y = 5
 		#relative_position_id = AST_empower_the_workers

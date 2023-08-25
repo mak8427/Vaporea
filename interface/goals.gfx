@@ -17,8 +17,12 @@ spriteTypes = {
 			name = "GFX_IRE_land_reform"
 			texturefile = "gfx/interface/goals/IRE_land_reform.dds"			
 		}
+		SpriteType = {
+			name = "GFX_IRE_political_support"
+			texturefile = "gfx/interface/goals/IRE_political_support.dds"			
+		}
 
-
+		
 
 
 	SpriteType = {
