@@ -89,9 +89,62 @@ ideas = {
 			modifier={
 				production_speed_buildings_factor = 0.10
 				consumer_goods_factor = -0.05
-				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor  = 0.2
 			}
+		}
+		british_cooperation1 = {
+			picture=usa_great_depression_3
+
+			allowed_civil_war={
+				always = yes
+			}
+			available ={
+				has_war = no
+			}
+			modifier={
+				war_support_factor = -0.05
+				stability_factor = 0.05
+			}
+
+		}
+
+		british_cooperation2 = {
+			picture=usa_great_depression_3
+
+			allowed_civil_war={
+				always = yes
+			}
+			available ={
+				has_war = no
+			}
+			modifier={
+				research_speed_factor = 0.1
+				license_production_speed = 0.2
+				war_support_factor = -0.05
+				stability_factor = 0.05
+			}
+
+		}
+		british_cooperation3 = {
+			picture=usa_great_depression_3
+
+			allowed_civil_war={
+				always = yes
+			}
+			available ={
+				has_war = no
+			}
+			modifier={
+				research_speed_factor = 0.1
+				license_production_speed = 0.2
+				war_support_factor = -0.05
+				stability_factor = 0.05
+				experience_gain_army = 0.2
+				experience_gain_army_unit = 0.1
+			}
+
 		}
 
 	}
+	
 }

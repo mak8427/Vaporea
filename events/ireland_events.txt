@@ -319,4 +319,32 @@ country_event = {
 			
 			ai_chance = { factor = 50 }
 			}
+
+}
+country_event = {
+	id = ireland.11
+	title = "Irish Land Reforms"
+	desc = ireland.11.d
+	picture = GFX_berlusca_caramba_event_image
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "We will redistribute the land"
+		add_stability = -0.05
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		save_global_event_target_as = IRE_redistribuite_land
+	}
+	option = {
+		name = "Sell the land to the highest bidder"
+		add_stability = -0.05
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+		}
+		save_global_event_target_as = IRE_sell_land
+	}
 }
