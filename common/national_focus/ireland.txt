@@ -215,7 +215,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id =  IRE_insurrections_in_northern_ireland
+		id =  IRE_start_supporting_the_local_militia
 		icon = GFX_focus_ETH_peacekeeping_forces
 		x = 23
 		y = 5
@@ -238,6 +238,8 @@ focus_tree = {
 
 
 		completion_reward = {
+			save_global_event_target_as = IRE_ireland_militia
+			
 		}
 		ai_will_do = {
 			factor = 0.9
