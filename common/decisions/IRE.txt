@@ -1,11 +1,14 @@
-simple_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
+IRE_militia_category = {		#Name of category that decisions will appear under, decisions MUST have a category to work properly.
 	simple_decision = {		#ID of the decision, must not contain spaces!
 
 		icon = GFX_decision_icon_default		#The left side icon to show for this decision.
 		
 		# CONDITIONS TO MAKE THIS DECISION/MISSION APPEAR AND EXECUTE
 		
-		available = {		#Conditions that will allow the player/AI to click the decision and execute its effect.
+		available = {
+
+
+					#Conditions that will allow the player/AI to click the decision and execute its effect.
 		}
 		
 		fire_only_once = no		#If set to yes, the decision will only appear once, after execution will not appear again.
@@ -16,6 +19,7 @@ simple_category = {		#Name of category that decisions will appear under, decisio
 				is_ai = no
 			}
 			is_debug = yes
+			tag = IRE
 		}		
 
 		cost = 0		#The cost to execute the decision, by default its political power.
@@ -27,7 +31,7 @@ simple_category = {		#Name of category that decisions will appear under, decisio
 			hidden_effect = {
 				add_political_power = 500
 			}
-		}
+ 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
 
