@@ -239,7 +239,10 @@ focus_tree = {
 
 		completion_reward = {
 			save_global_event_target_as = IRE_ireland_militia
+			add_war_support = 0.1
 			
+
+
 		}
 		ai_will_do = {
 			factor = 0.9

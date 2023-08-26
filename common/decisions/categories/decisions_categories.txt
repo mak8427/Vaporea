@@ -42,4 +42,6 @@ category_with_map_icon = {		#This is the type of category used for the spanish c
 		name = map_icon_strip_localisation		#A localisation entry for the magnifying glass strip, defined in a localisation file.
 		zoom = 100		#Determines how closely the camera will zoom to the state, the lower the number the closer it will zoom in.
 	}
+
+	
 }
