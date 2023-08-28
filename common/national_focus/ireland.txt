@@ -248,6 +248,40 @@ focus_tree = {
 			factor = 0.9
 		}
 	}
+	focus = {
+		id =  IRE_we_need_a_new_force
+		icon = GFX_focus_ETH_peacekeeping_forces
+		x = 23
+		y = 5
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		cost = 1
+		prerequisite = { focus =IRE_start_supporting_the_local_militia }
+
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			save_global_event_target_as = IRE_ireland_militia
+			add_war_support = 0.1
+			
+
+
+		}
+		ai_will_do = {
+			factor = 0.9
+		}
+	}
+
 	#
 	#
 	#
