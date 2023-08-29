@@ -684,6 +684,39 @@ focus_tree = {
 			factor = 0.1
 		}
 	}
+	focus = {
+		id =  IRE_military_complex_buildup
+		icon = GFX_focus_generic_industry_2
+		x = 28
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = { }
+		bypass = {
+		}
+		prerequisite = {
+			focus = IRE_incentivise_industrialisation
+		}
+		
+		cost = 1
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = rural_economy
+				add_idea = rural_economy1
+			}
+			country_event = {
+				id = ireland.12
+			}
+
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0.1
+		}
+	}
 
 
 
