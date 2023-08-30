@@ -404,3 +404,29 @@ country_event = {
 		name = "we can't afford it"
 	}
 }
+country_event = {
+	id = ireland.13
+	title = "Integrate northen Ireland"
+	desc = ireland.13.d
+	picture = GFX_berlusca_caramba_event_image
+	is_triggered_only = yes
+	option = {
+		name = "We will integrate them"
+		random_country = {
+			limit = { owns_state = 119 }
+			IRE = {
+				create_wargoal = {
+					type = take_core_state
+					target = PREV
+					generator = { 119 }
+				}
+			}
+		}
+
+
+
+	}
+	option = {
+		name = "we can't afford it"
+	}
+}
