@@ -205,7 +205,7 @@ category_with_map_icon = {
 		# EFFECTS OF THIS DECISION/MISSION
 
 		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-			FROM = { 119={ add_resistance = 10 } }
+			FROM = { 119={ add_resistance = 20 } }
 			add_manpower = -1000
 
 
