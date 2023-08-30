@@ -76,8 +76,11 @@ IRE_militia_category = {		#Name of category that decisions will appear under, de
 		# EFFECTS OF THIS DECISION/MISSION
 
 		complete_effect = {
+			set_temp_variable = { temp_var =  party_popularity@fascism }
+			multiply_temp_variable = { temp_var = 2500 }
+
 	#The effects to execute once the envelope icon is clicked.
-			add_manpower = 1500
+			add_manpower = temp_var
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
@@ -112,8 +115,12 @@ IRE_militia_category = {		#Name of category that decisions will appear under, de
 
 		# EFFECTS OF THIS DECISION/MISSION
 
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-			add_manpower = 1500
+		complete_effect = {
+			set_temp_variable = { temp_var =  party_popularity@fascism }
+			multiply_temp_variable = { temp_var = 2500 }
+
+	#The effects to execute once the envelope icon is clicked.
+			add_manpower = temp_var
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION
@@ -147,9 +154,12 @@ IRE_militia_category = {		#Name of category that decisions will appear under, de
 		cost = 30		#The cost to execute the decision, by default its political power.
 
 		# EFFECTS OF THIS DECISION/MISSION
+		complete_effect = {
+			set_temp_variable = { temp_var =  party_popularity@fascism }
+			multiply_temp_variable = { temp_var = 2500 }
 
-		complete_effect = {		#The effects to execute once the envelope icon is clicked.
-			add_manpower = 1500
+	#The effects to execute once the envelope icon is clicked.
+			add_manpower = temp_var
 		}
 		
 		# AI LOGIC FOR THIS DECISION/MISSION

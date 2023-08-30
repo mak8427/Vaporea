@@ -281,6 +281,47 @@ focus_tree = {
 			factor = 0.9
 		}
 	}
+	focus = {
+		id =  IRE_invade_north_ireland
+		icon = GFX_focus_ETH_peacekeeping_forces
+		x = 23
+		y = 7
+		#relative_position_id = AST_empower_the_workers
+		
+		available = {
+			NOT = {	119 = { is_controlled_by = BRT } }
+		}
+		bypass = {
+			NOT = {	119 = { is_controlled_by = BRT } }		
+		}
+		
+		cost = 1
+		prerequisite = { focus =IRE_Start_organsing_the_militia }
+
+ 
+ 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			random_country = {
+				limit = { owns_state = 119 }
+				IRE = {
+					declare_war_on = {
+						target = PREV
+					}
+				}
+			}
+			
+
+
+		}
+		ai_will_do = {
+			factor = 0.9
+		}
+	}
 
 	#
 	#
