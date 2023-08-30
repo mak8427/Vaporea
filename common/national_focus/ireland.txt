@@ -249,10 +249,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id =  IRE_we_need_a_new_force
+		id =  IRE_Start_organsing_the_militia
 		icon = GFX_focus_ETH_peacekeeping_forces
 		x = 23
-		y = 5
+		y = 6
 		#relative_position_id = AST_empower_the_workers
 		
 		available = {
@@ -271,8 +271,8 @@ focus_tree = {
 
 
 		completion_reward = {
-			save_global_event_target_as = IRE_ireland_militia
-			add_war_support = 0.1
+			save_global_event_target_as = IRE_ireland_militia_organised
+			add_political_power = 300
 			
 
 
@@ -687,7 +687,7 @@ focus_tree = {
 	focus = {
 		id =  IRE_military_complex_buildup
 		icon = GFX_focus_generic_industry_2
-		x = 28
+		x = 29
 		y = 1
 		#relative_position_id = AST_empower_the_workers
 		
@@ -700,15 +700,79 @@ focus_tree = {
 		
 		cost = 1
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = rural_economy
-				add_idea = rural_economy1
+			113={add_building_construction = {
+				type = arms_factory
+				level = 3
+				max_level = 3
+				}
+				add_extra_state_shared_building_slots = 3
 			}
-			country_event = {
-				id = ireland.12
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0.1
+		}
+	}
+	focus = {
+		id =  IRE_construction_sector_buildup
+		icon = GFX_focus_generic_industry_2
+		x = 27
+		y = 1
+		#relative_position_id = AST_empower_the_workers
+		
+		available = { }
+		bypass = {
+		}
+		prerequisite = {
+			focus = IRE_incentivise_industrialisation
+		}
+		mutually_exclusive = { focus = IRE_military_complex_buildup }
+		
+		cost = 1
+		completion_reward = {
+			113={
+				add_building_construction = {
+				type = industrial_complex
+				level = 2
+				max_level = 2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
 			}
+			
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		ai_will_do = {
+			factor = 0.1
+		}
+	}
+	focus = {
+		id =  IRE_subsides_the_business
+		icon = GFX_focus_generic_industry_2
+		x = 28
+		y = 2
+		#relative_position_id = AST_empower_the_workers
+		
+		available = { }
+		bypass = {
+		}
+		prerequisite = {
+			focus = IRE_construction_sector_buildup
+			focus = IRE_military_complex_buildup
+		}
+		
+		
+		cost = 1
+		completion_reward = {
 
-
+			
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
